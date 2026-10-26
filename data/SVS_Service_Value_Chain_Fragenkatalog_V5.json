@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "GOEK-XLS-SVC-2026-10-22",
+  "catalog_version": "2026.10.22",
+  "component_id": "service_value_chain",
+  "metadata": {
+    "title": "Service-Wertschöpfungskette",
+    "source": "Fragenkatalog.xlsx",
+    "official_peoplecert_assessment": false,
+    "question_count": 11
+  },
+  "source": {
+    "filename": "Fragenkatalog.xlsx",
+    "sha256": "7c95e3a6d93c04fb183a3dfc8283973a9edd7dd83280f3f935630a205c20d94f",
+    "sheets": [
+      "Fragen SVS Kategorien",
+      "Fragen Practices"
+    ]
+  },
+  "introduction": "In den folgenden Fragen geht es um die Service-Wertschöpfungskette. Damit ist gemeint, wie ein Anliegen an die IT von der ersten Anfrage bis zur nutzbaren Lösung bearbeitet wird und wie die beteiligten Teams dabei zusammenarbeiten.\n\nBeispiele für IT-Anliegen wären der Weg von der Anfrage nach einem neuen IT-Arbeitsplatz bis zur einsatzbereiten Ausstattung oder von der Meldung einer Störung bis zur wieder funktionierenden Anwendung.\n\nSind Ihnen solche Abläufe und die Zusammenarbeit der beteiligten Teams grundsätzlich bekannt?",
+  "criteria": [
+    {
+      "id": "SVC",
+      "name": "Service-Wertschöpfungskette",
+      "title": "Service-Wertschöpfungskette",
+      "order": 1,
+      "level_requirements": [
+        {
+          "level": 1,
+          "question_ids": [
+            "XLS-SVC-R027"
+          ],
+          "criterion_texts": [
+            "Wurde bei Ihnen schon einmal eine IT-Anfrage von der Aufnahme bis zu einer nutzbaren Lösung bearbeitet?"
+          ],
+          "description": "Wurde bei Ihnen schon einmal eine IT-Anfrage von der Aufnahme bis zu einer nutzbaren Lösung bearbeitet?"
+        },
+        {
+          "level": 2,
+          "question_ids": [
+            "XLS-SVC-R028"
+          ],
+          "criterion_texts": [
+            "Gibt es eingespielte Abläufe, die angewandt werden um verschiedene IT-Aufgaben von der Anfrage bis zur nutzbaren Lösung durchzuführen?"
+          ],
+          "description": "Gibt es eingespielte Abläufe, die angewandt werden um verschiedene IT-Aufgaben von der Anfrage bis zur nutzbaren Lösung durchzuführen?"
+        },
+        {
+          "level": 3,
+          "question_ids": [
+            "XLS-SVC-R029",
+            "XLS-SVC-R030",
+            "XLS-SVC-R031",
+            "XLS-SVC-R032",
+            "XLS-SVC-R033"
+          ],
+          "criterion_texts": [
+            "Sind die wichtigen Abläufe von der Anfrage bis zum Ergebnis mit Zuständigkeiten und Übergaben schriftlich festgehalten?",
+            "Sind diese Abläufe allen Beteiligten, einschließlich externer Anbieter, bekannt?",
+            "Halten sich die Beteiligten an die vereinbarten Abläufe?",
+            "Ist klar, welche IT-Aufgaben für die einzelnen Abläufe benötigt werden?",
+            "Gibt es klare Regeln für Sonderfälle?"
+          ],
+          "description": "Sind die wichtigen Abläufe von der Anfrage bis zum Ergebnis mit Zuständigkeiten und Übergaben schriftlich festgehalten?\nSind diese Abläufe allen Beteiligten, einschließlich externer Anbieter, bekannt?\nHalten sich die Beteiligten an die vereinbarten Abläufe?\nIst klar, welche IT-Aufgaben für die einzelnen Abläufe benötigt werden?\nGibt es klare Regeln für Sonderfälle?"
+        },
+        {
+          "level": 4,
+          "question_ids": [
+            "XLS-SVC-R034",
+            "XLS-SVC-R035"
+          ],
+          "criterion_texts": [
+            "Werden die Ergebnisse der gesamten Abläufe regelmäßig beobachtet, gemessen und bewertet?",
+            "Stimmen die Verantwortlichen einzelner IT-Aufgaben und Verantwortliche der unternehmensweiten Abläufe ihre Entscheidungen miteinander ab?"
+          ],
+          "description": "Werden die Ergebnisse der gesamten Abläufe regelmäßig beobachtet, gemessen und bewertet?\nStimmen die Verantwortlichen einzelner IT-Aufgaben und Verantwortliche der unternehmensweiten Abläufe ihre Entscheidungen miteinander ab?"
+        },
+        {
+          "level": 5,
+          "question_ids": [
+            "XLS-SVC-R036",
+            "XLS-SVC-R037"
+          ],
+          "criterion_texts": [
+            "Überprüfen benannte Verantwortliche die Abläufe regelmäßig von Anfang bis Ende und verbessern sie bei Bedarf?",
+            "Ist belegt, dass die verbesserten Abläufe dauerhaft helfen, die Unternehmensziele zu erreichen?"
+          ],
+          "description": "Überprüfen benannte Verantwortliche die Abläufe regelmäßig von Anfang bis Ende und verbessern sie bei Bedarf?\nIst belegt, dass die verbesserten Abläufe dauerhaft helfen, die Unternehmensziele zu erreichen?"
+        }
+      ]
+    }
+  ],
+  "rating_units": [],
+  "questions": [
+    {
+      "id": "XLS-SVC-R027",
+      "text": "Wurde bei Ihnen schon einmal eine IT-Anfrage von der Aufnahme bis zu einer nutzbaren Lösung bearbeitet?",
+      "criterion_text": "Wurde bei Ihnen schon einmal eine IT-Anfrage von der Aufnahme bis zu einer nutzbaren Lösung bearbeitet?",
+      "criterion_id": "SVC",
+      "level": 1,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 27,
+      "source_row_sha256": "1eb7b8e7a7207cc40063279aaaae6dbec22c6eb522ed7fe936297d65afaa8d41",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R028",
+      "text": "Gibt es eingespielte Abläufe, die angewandt werden um verschiedene IT-Aufgaben von der Anfrage bis zur nutzbaren Lösung durchzuführen?",
+      "criterion_text": "Gibt es eingespielte Abläufe, die angewandt werden um verschiedene IT-Aufgaben von der Anfrage bis zur nutzbaren Lösung durchzuführen?",
+      "criterion_id": "SVC",
+      "level": 2,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 28,
+      "source_row_sha256": "df0f28348c31dad00d0bda43c858ae8dda47472d6846617ae3df0a8242111be6",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R029",
+      "text": "Sind die wichtigen Abläufe von der Anfrage bis zum Ergebnis mit Zuständigkeiten und Übergaben schriftlich festgehalten?",
+      "criterion_text": "Sind die wichtigen Abläufe von der Anfrage bis zum Ergebnis mit Zuständigkeiten und Übergaben schriftlich festgehalten?",
+      "criterion_id": "SVC",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 29,
+      "source_row_sha256": "e29cf73f6b350b9da5778f8a5bf78f38b9c8b922ad0da1e28550f27f2e83c913",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R030",
+      "text": "Sind diese Abläufe allen Beteiligten, einschließlich externer Anbieter, bekannt?",
+      "criterion_text": "Sind diese Abläufe allen Beteiligten, einschließlich externer Anbieter, bekannt?",
+      "criterion_id": "SVC",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 30,
+      "source_row_sha256": "f6dfa194ee33637433cc7925e4f57adba93756d420c9c781e07182fb4a44e50b",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R031",
+      "text": "Halten sich die Beteiligten an die vereinbarten Abläufe?",
+      "criterion_text": "Halten sich die Beteiligten an die vereinbarten Abläufe?",
+      "criterion_id": "SVC",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 31,
+      "source_row_sha256": "5275b53c8c5330ed2502b213f8113f3bcdd65d612ab5787d7f89a3f74917b6e3",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R032",
+      "text": "Ist klar, welche IT-Aufgaben für die einzelnen Abläufe benötigt werden?",
+      "criterion_text": "Ist klar, welche IT-Aufgaben für die einzelnen Abläufe benötigt werden?",
+      "criterion_id": "SVC",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 32,
+      "source_row_sha256": "178bd442e1323925105dc95ae9084490c49d9cc4e7aaef879f5a2291e552fb76",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R033",
+      "text": "Gibt es klare Regeln für Sonderfälle?",
+      "criterion_text": "Gibt es klare Regeln für Sonderfälle?",
+      "criterion_id": "SVC",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 33,
+      "source_row_sha256": "ff71f7b60ec388be5805b42e81b743e9483d8b5af8352d5e123800fb61a24e42",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R034",
+      "text": "Werden die Ergebnisse der gesamten Abläufe regelmäßig beobachtet, gemessen und bewertet?",
+      "criterion_text": "Werden die Ergebnisse der gesamten Abläufe regelmäßig beobachtet, gemessen und bewertet?",
+      "criterion_id": "SVC",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 34,
+      "source_row_sha256": "8072124af29d35bbe82fb3f059cffbcfc8c7389c7904bc741a104945d1893439",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R035",
+      "text": "Stimmen die Verantwortlichen einzelner IT-Aufgaben und Verantwortliche der unternehmensweiten Abläufe ihre Entscheidungen miteinander ab?",
+      "criterion_text": "Stimmen die Verantwortlichen einzelner IT-Aufgaben und Verantwortliche der unternehmensweiten Abläufe ihre Entscheidungen miteinander ab?",
+      "criterion_id": "SVC",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 35,
+      "source_row_sha256": "670a08dc6eb36882c0e2efac843f07b7eafd89e1fb4293dfead8901a4b893646",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R036",
+      "text": "Überprüfen benannte Verantwortliche die Abläufe regelmäßig von Anfang bis Ende und verbessern sie bei Bedarf?",
+      "criterion_text": "Überprüfen benannte Verantwortliche die Abläufe regelmäßig von Anfang bis Ende und verbessern sie bei Bedarf?",
+      "criterion_id": "SVC",
+      "level": 5,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 36,
+      "source_row_sha256": "d1b670878960074b4999bb69264c6aea16f6794f3a79e8b4891b98347db41c1d",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-SVC-R037",
+      "text": "Ist belegt, dass die verbesserten Abläufe dauerhaft helfen, die Unternehmensziele zu erreichen?",
+      "criterion_text": "Ist belegt, dass die verbesserten Abläufe dauerhaft helfen, die Unternehmensziele zu erreichen?",
+      "criterion_id": "SVC",
+      "level": 5,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 37,
+      "source_row_sha256": "0f7a8229b2b83560c7a40b32da5c7a43251b6837797152d508d20128cedf8dc8",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    }
+  ],
+  "option_sets": {
+    "standard_evidence_answer": [
+      {
+        "id": "yes",
+        "label": "Ja"
+      },
+      {
+        "id": "partial",
+        "label": "Teilweise"
+      },
+      {
+        "id": "no",
+        "label": "Nein"
+      },
+      {
+        "id": "unknown",
+        "label": "Unklar"
+      }
+    ]
+  },
+  "input_defaults": {
+    "template": {
+      "assessment_id": "ASSESSMENT-ID",
+      "assessment_unit_id": "UNIT-ID",
+      "catalog_id": "GOEK-XLS-SVC-2026-10-22",
+      "catalog_version": "2026.10.22",
+      "assessment_execution_mode": "draft_preview",
+      "context": {
+        "organization": "",
+        "scope_id": "",
+        "scope_description": "",
+        "services_in_scope": [],
+        "criticality": "",
+        "assessment_period": {
+          "start": null,
+          "end": null
+        },
+        "assessment_date": null,
+        "assessors": [],
+        "scope_reviewed": false,
+        "evidence_reviewed": false
+      },
+      "evidence_register": [],
+      "responses": [],
+      "extensions": {
+        "criterion_ratings": [],
+        "value_stream_inventory": [],
+        "coverage_mode": null,
+        "inventory_reviewed": false,
+        "coverage_evidence_ids": [],
+        "stream_selection_rationale": "",
+        "scope_flags": {
+          "external_partners_in_scope": null
+        },
+        "scope_flag_decisions": {}
+      }
+    }
+  },
+  "common_assessment_policy": {
+    "policy_id": "GOEK-XLSX-PSF-CUMULATIVE-2026-10-22",
+    "policy_version": "2026.10.22",
+    "canonical_fields": {
+      "answer": [
+        "yes",
+        "partial",
+        "no",
+        "unknown"
+      ],
+      "finding": [
+        "fulfilled",
+        "not_fulfilled",
+        "partial",
+        "open"
+      ],
+      "review_status": [
+        "pending",
+        "approved"
+      ],
+      "evidence_status": [
+        "not_checked",
+        "sufficient",
+        "insufficient",
+        "conflicting"
+      ]
+    }
+  },
+  "introduction_source": {
+    "source_row": 26,
+    "source_sheet": "Fragen SVS Kategorien",
+    "source_row_sha256": "f887da8ff69912ef812c922ec2dae2e217147d57b7832c27b7e82f5d2183ab4d"
+  }
+}

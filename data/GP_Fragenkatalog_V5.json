@@ -1,0 +1,322 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "GOEK-XLS-GP-2026-10-22",
+  "catalog_version": "2026.10.22",
+  "component_id": "guiding_principles",
+  "metadata": {
+    "title": "Leitprinzipien",
+    "source": "Fragenkatalog.xlsx",
+    "official_peoplecert_assessment": false,
+    "question_count": 9
+  },
+  "source": {
+    "filename": "Fragenkatalog.xlsx",
+    "sha256": "7c95e3a6d93c04fb183a3dfc8283973a9edd7dd83280f3f935630a205c20d94f",
+    "sheets": [
+      "Fragen SVS Kategorien",
+      "Fragen Practices"
+    ]
+  },
+  "introduction": "In den folgenden Fragen geht es um Leitprinzipien. Damit sind unternehmensweite Grundsätze gemeint, die Orientierung für Entscheidungen oder Zusammenarbeit liefern.\n\nBeispiele von Grundsätzen wären: „Wir halten unsere Abläufe möglichst einfach“ oder „Wir beziehen die betroffenen Personen in Entscheidungen ein“.\n\nWissen Sie, ob es solche Grundsätze bei Ihnen gibt?",
+  "criteria": [
+    {
+      "id": "GP",
+      "name": "Leitprinzipien",
+      "title": "Leitprinzipien",
+      "order": 1,
+      "level_requirements": [
+        {
+          "level": 1,
+          "question_ids": [
+            "XLS-GP-R003"
+          ],
+          "criterion_texts": [
+            "Sind Ihnen Leitprinzipien bekannt, die Ihre Entscheidungen beeinflussen?"
+          ],
+          "description": "Sind Ihnen Leitprinzipien bekannt, die Ihre Entscheidungen beeinflussen?"
+        },
+        {
+          "level": 2,
+          "question_ids": [
+            "XLS-GP-R004"
+          ],
+          "criterion_texts": [
+            "Liegen einheitliche Leitprinzipien vor und sind sich alle Führungskräfte in ihrer Anwendung einig?"
+          ],
+          "description": "Liegen einheitliche Leitprinzipien vor und sind sich alle Führungskräfte in ihrer Anwendung einig?"
+        },
+        {
+          "level": 3,
+          "question_ids": [
+            "XLS-GP-R005",
+            "XLS-GP-R006"
+          ],
+          "criterion_texts": [
+            "Sind die Leitprinzipien schriftlich festgehalten und offiziell bekanntgegeben?",
+            "Kennen und verstehen die meisten Beteiligten die Leitprinzipien? Stimmen sie ihnen zu?"
+          ],
+          "description": "Sind die Leitprinzipien schriftlich festgehalten und offiziell bekanntgegeben?\nKennen und verstehen die meisten Beteiligten die Leitprinzipien? Stimmen sie ihnen zu?"
+        },
+        {
+          "level": 4,
+          "question_ids": [
+            "XLS-GP-R007",
+            "XLS-GP-R008",
+            "XLS-GP-R009",
+            "XLS-GP-R010"
+          ],
+          "criterion_texts": [
+            "Werden die Leitprinzipien bei Entscheidungen und Durchführung von Leistungen beachtet? ",
+            "Werden die Leitprinzipien in Ihren Bereichen erklärt? ",
+            "Werden die Mitarbeitenden bei der Anwendung der Leitprinzipien unterstützt?",
+            "Wird überprüft, ob die Leitprinzipien angewendet und eingehalten werden?"
+          ],
+          "description": "Werden die Leitprinzipien bei Entscheidungen und Durchführung von Leistungen beachtet? \nWerden die Leitprinzipien in Ihren Bereichen erklärt? \nWerden die Mitarbeitenden bei der Anwendung der Leitprinzipien unterstützt?\nWird überprüft, ob die Leitprinzipien angewendet und eingehalten werden?"
+        },
+        {
+          "level": 5,
+          "question_ids": [
+            "XLS-GP-R011"
+          ],
+          "criterion_texts": [
+            "Werden die Leitprinzipien dauerhaft angewendet und bei neuen Zielen oder Erfahrungen geprüft, ob die Leitprinzipien noch passen?"
+          ],
+          "description": "Werden die Leitprinzipien dauerhaft angewendet und bei neuen Zielen oder Erfahrungen geprüft, ob die Leitprinzipien noch passen?"
+        }
+      ]
+    }
+  ],
+  "rating_units": [],
+  "questions": [
+    {
+      "id": "XLS-GP-R003",
+      "text": "Sind Ihnen Leitprinzipien bekannt, die Ihre Entscheidungen beeinflussen?",
+      "criterion_text": "Sind Ihnen Leitprinzipien bekannt, die Ihre Entscheidungen beeinflussen?",
+      "criterion_id": "GP",
+      "level": 1,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 3,
+      "source_row_sha256": "e689031e0b3daba3bb6f7fc97c5993fffdbe2318e3b53a6d489851943279469a",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GP-R004",
+      "text": "Liegen einheitliche Leitprinzipien vor und sind sich alle Führungskräfte in ihrer Anwendung einig?",
+      "criterion_text": "Liegen einheitliche Leitprinzipien vor und sind sich alle Führungskräfte in ihrer Anwendung einig?",
+      "criterion_id": "GP",
+      "level": 2,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 4,
+      "source_row_sha256": "aa9943daa81e39a7208d064138d1916bdaa96c39f61ad0ff8f2d4431ea5aba47",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GP-R005",
+      "text": "Sind die Leitprinzipien schriftlich festgehalten und offiziell bekanntgegeben?",
+      "criterion_text": "Sind die Leitprinzipien schriftlich festgehalten und offiziell bekanntgegeben?",
+      "criterion_id": "GP",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 5,
+      "source_row_sha256": "af5fbd56b3af41f672d738da137f4e766c35afd8a0ca81deab443135ea2debf7",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GP-R006",
+      "text": "Kennen und verstehen die meisten Beteiligten die Leitprinzipien? Stimmen sie ihnen zu?",
+      "criterion_text": "Kennen und verstehen die meisten Beteiligten die Leitprinzipien? Stimmen sie ihnen zu?",
+      "criterion_id": "GP",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 6,
+      "source_row_sha256": "0ada116af139759aec770a4f552580d0f69d1842c33c0d8b46eaf0d550357e86",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GP-R007",
+      "text": "Werden die Leitprinzipien bei Entscheidungen und Durchführung von Leistungen beachtet? ",
+      "criterion_text": "Werden die Leitprinzipien bei Entscheidungen und Durchführung von Leistungen beachtet? ",
+      "criterion_id": "GP",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 7,
+      "source_row_sha256": "a8f67ff86ffe3b990ce95400313425530783b217881734c6fcedd66bceec0557",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GP-R008",
+      "text": "Werden die Leitprinzipien in Ihren Bereichen erklärt? ",
+      "criterion_text": "Werden die Leitprinzipien in Ihren Bereichen erklärt? ",
+      "criterion_id": "GP",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 8,
+      "source_row_sha256": "601d0370b9f0347a5f1ba1852ffd8c0d26fee6f557681026f78fde12de25ac5e",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GP-R009",
+      "text": "Werden die Mitarbeitenden bei der Anwendung der Leitprinzipien unterstützt?",
+      "criterion_text": "Werden die Mitarbeitenden bei der Anwendung der Leitprinzipien unterstützt?",
+      "criterion_id": "GP",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 9,
+      "source_row_sha256": "f6d8e42b0b978dcc8e9138d7304926ccaf35674ef6585548a2dd49b2599798f8",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GP-R010",
+      "text": "Wird überprüft, ob die Leitprinzipien angewendet und eingehalten werden?",
+      "criterion_text": "Wird überprüft, ob die Leitprinzipien angewendet und eingehalten werden?",
+      "criterion_id": "GP",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 10,
+      "source_row_sha256": "883aa837c565eca9117d31b175a61aa9356897d48e1fd8aa6b0dd4ba1fb9b64c",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GP-R011",
+      "text": "Werden die Leitprinzipien dauerhaft angewendet und bei neuen Zielen oder Erfahrungen geprüft, ob die Leitprinzipien noch passen?",
+      "criterion_text": "Werden die Leitprinzipien dauerhaft angewendet und bei neuen Zielen oder Erfahrungen geprüft, ob die Leitprinzipien noch passen?",
+      "criterion_id": "GP",
+      "level": 5,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 11,
+      "source_row_sha256": "85d05baf53fd71f9ec6d8165e4412d1014112ed979188f17ddad86c44cd4c8e2",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    }
+  ],
+  "option_sets": {
+    "standard_evidence_answer": [
+      {
+        "id": "yes",
+        "label": "Ja"
+      },
+      {
+        "id": "partial",
+        "label": "Teilweise"
+      },
+      {
+        "id": "no",
+        "label": "Nein"
+      },
+      {
+        "id": "unknown",
+        "label": "Unklar"
+      }
+    ]
+  },
+  "input_defaults": {
+    "template": {
+      "assessment_id": "ASSESSMENT-ID",
+      "assessment_unit_id": "UNIT-ID",
+      "catalog_id": "GOEK-XLS-GP-2026-10-22",
+      "catalog_version": "2026.10.22",
+      "assessment_execution_mode": "draft_preview",
+      "context": {
+        "organization": "",
+        "scope_id": "",
+        "scope_description": "",
+        "services_in_scope": [],
+        "criticality": "",
+        "assessment_period": {
+          "start": null,
+          "end": null
+        },
+        "assessment_date": null,
+        "assessors": [],
+        "scope_reviewed": false,
+        "evidence_reviewed": false
+      },
+      "evidence_register": [],
+      "responses": [],
+      "extensions": {
+        "domain_context": {},
+        "scope_flags": {},
+        "scope_flag_decisions": {},
+        "excluded_question_ids": [],
+        "criterion_ratings": []
+      }
+    }
+  },
+  "common_assessment_policy": {
+    "policy_id": "GOEK-XLSX-PSF-CUMULATIVE-2026-10-22",
+    "policy_version": "2026.10.22",
+    "canonical_fields": {
+      "answer": [
+        "yes",
+        "partial",
+        "no",
+        "unknown"
+      ],
+      "finding": [
+        "fulfilled",
+        "not_fulfilled",
+        "partial",
+        "open"
+      ],
+      "review_status": [
+        "pending",
+        "approved"
+      ],
+      "evidence_status": [
+        "not_checked",
+        "sufficient",
+        "insufficient",
+        "conflicting"
+      ]
+    }
+  },
+  "introduction_source": {
+    "source_row": 2,
+    "source_sheet": "Fragen SVS Kategorien",
+    "source_row_sha256": "8531a8965dfeae2470042b8da23fe1682556000fbc8958c199558455efd1cffa"
+  }
+}

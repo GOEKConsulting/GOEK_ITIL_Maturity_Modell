@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "GOEK-XLS-CI-2026-10-22",
+  "catalog_version": "2026.10.22",
+  "component_id": "continual_improvement",
+  "metadata": {
+    "title": "Kontinuierliche Verbesserung im SVS",
+    "source": "Fragenkatalog.xlsx",
+    "official_peoplecert_assessment": false,
+    "question_count": 10
+  },
+  "source": {
+    "filename": "Fragenkatalog.xlsx",
+    "sha256": "7c95e3a6d93c04fb183a3dfc8283973a9edd7dd83280f3f935630a205c20d94f",
+    "sheets": [
+      "Fragen SVS Kategorien",
+      "Fragen Practices"
+    ]
+  },
+  "introduction": "In den folgenden Fragen geht es um die kontinuierliche Verbesserung der IT. Damit ist gemeint, dass Leistungen, Arbeitsabläufe, Zusammenarbeit und Führung regelmäßig überprüft und gezielt verbessert werden. Dabei wird auch geprüft, ob die Änderungen tatsächlich helfen und dauerhaft wirken.\n\nBeispiele wären klarere Zuständigkeiten zwischen Teams oder kürzere Wartezeiten bei IT-Anfragen.\n\nSind Ihnen solche Verbesserungen und das Vorgehen bei ihrer Umsetzung grundsätzlich bekannt?",
+  "criteria": [
+    {
+      "id": "CI",
+      "name": "Kontinuierliche Verbesserung im SVS",
+      "title": "Kontinuierliche Verbesserung im SVS",
+      "order": 1,
+      "level_requirements": [
+        {
+          "level": 1,
+          "question_ids": [
+            "XLS-CI-R040"
+          ],
+          "criterion_texts": [
+            "Werden bei Ihnen gelegentlich Änderungen umgesetzt? Wird gelegentlich geprüft, ob eine Verbesserung vorliegt?"
+          ],
+          "description": "Werden bei Ihnen gelegentlich Änderungen umgesetzt? Wird gelegentlich geprüft, ob eine Verbesserung vorliegt?"
+        },
+        {
+          "level": 2,
+          "question_ids": [
+            "XLS-CI-R041"
+          ],
+          "criterion_texts": [
+            "Werden regelmäßig Verbesserungen umgesetzt und ihre Ergebnisse wiederholt überprüft?"
+          ],
+          "description": "Werden regelmäßig Verbesserungen umgesetzt und ihre Ergebnisse wiederholt überprüft?"
+        },
+        {
+          "level": 3,
+          "question_ids": [
+            "XLS-CI-R042",
+            "XLS-CI-R043",
+            "XLS-CI-R044"
+          ],
+          "criterion_texts": [
+            "Sind die Leistungsziele der IT schriftlich festgehalten?",
+            "Werden die Leistungsziele nach den Unternehmenszielen ausgerichtet?",
+            "Gibt es ein Vorgehen, um Ergebnisse zu messen und Verbesserungen umzusetzen?"
+          ],
+          "description": "Sind die Leistungsziele der IT schriftlich festgehalten?\nWerden die Leistungsziele nach den Unternehmenszielen ausgerichtet?\nGibt es ein Vorgehen, um Ergebnisse zu messen und Verbesserungen umzusetzen?"
+        },
+        {
+          "level": 4,
+          "question_ids": [
+            "XLS-CI-R045",
+            "XLS-CI-R046",
+            "XLS-CI-R047"
+          ],
+          "criterion_texts": [
+            "Wird anhand von Zahlen überprüft, was die Verbesserungen bewirken?",
+            "Wird verfolgt und bewertet, wie sich die Ergebnisse der Verbesserungen im Laufe der Zeit entwickeln?",
+            "Werden Verbesserungen auch frühzeitig angestoßen, bevor Probleme auftreten?"
+          ],
+          "description": "Wird anhand von Zahlen überprüft, was die Verbesserungen bewirken?\nWird verfolgt und bewertet, wie sich die Ergebnisse der Verbesserungen im Laufe der Zeit entwickeln?\nWerden Verbesserungen auch frühzeitig angestoßen, bevor Probleme auftreten?"
+        },
+        {
+          "level": 5,
+          "question_ids": [
+            "XLS-CI-R048",
+            "XLS-CI-R049"
+          ],
+          "criterion_texts": [
+            "Werden die Ziele für die IT-Leistungen an veränderte Unternehmensziele angepasst?",
+            "Wird das gemeinsame Vorgehen zur Verbesserung weiterentwickelt, damit es die langfristigen Unternehmensziele unterstützt?"
+          ],
+          "description": "Werden die Ziele für die IT-Leistungen an veränderte Unternehmensziele angepasst?\nWird das gemeinsame Vorgehen zur Verbesserung weiterentwickelt, damit es die langfristigen Unternehmensziele unterstützt?"
+        }
+      ]
+    }
+  ],
+  "rating_units": [],
+  "questions": [
+    {
+      "id": "XLS-CI-R040",
+      "text": "Werden bei Ihnen gelegentlich Änderungen umgesetzt? Wird gelegentlich geprüft, ob eine Verbesserung vorliegt?",
+      "criterion_text": "Werden bei Ihnen gelegentlich Änderungen umgesetzt? Wird gelegentlich geprüft, ob eine Verbesserung vorliegt?",
+      "criterion_id": "CI",
+      "level": 1,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 40,
+      "source_row_sha256": "727768478cdc8f1c14df80b3f96fb4f7c45ca59444a04cd468b2a67cf3f35bab",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-CI-R041",
+      "text": "Werden regelmäßig Verbesserungen umgesetzt und ihre Ergebnisse wiederholt überprüft?",
+      "criterion_text": "Werden regelmäßig Verbesserungen umgesetzt und ihre Ergebnisse wiederholt überprüft?",
+      "criterion_id": "CI",
+      "level": 2,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 41,
+      "source_row_sha256": "06fc57d3676706454d06fe8083a046ab0be544edb89eebbd88ca95692d63170b",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-CI-R042",
+      "text": "Sind die Leistungsziele der IT schriftlich festgehalten?",
+      "criterion_text": "Sind die Leistungsziele der IT schriftlich festgehalten?",
+      "criterion_id": "CI",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 42,
+      "source_row_sha256": "b20f8f24f28453c721adf2f64b76fc4ba3d3b11d0f4c247f118d8a3a97109f38",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-CI-R043",
+      "text": "Werden die Leistungsziele nach den Unternehmenszielen ausgerichtet?",
+      "criterion_text": "Werden die Leistungsziele nach den Unternehmenszielen ausgerichtet?",
+      "criterion_id": "CI",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 43,
+      "source_row_sha256": "41f0fb229be88d22f00c9bacbbb6fe5520e3c424b1bb841f61da8a670d2fbe7b",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-CI-R044",
+      "text": "Gibt es ein Vorgehen, um Ergebnisse zu messen und Verbesserungen umzusetzen?",
+      "criterion_text": "Gibt es ein Vorgehen, um Ergebnisse zu messen und Verbesserungen umzusetzen?",
+      "criterion_id": "CI",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 44,
+      "source_row_sha256": "3dcc042a6f2c33060715af78b5f62c408483ba3faa3bb1387a87852409ac62ef",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-CI-R045",
+      "text": "Wird anhand von Zahlen überprüft, was die Verbesserungen bewirken?",
+      "criterion_text": "Wird anhand von Zahlen überprüft, was die Verbesserungen bewirken?",
+      "criterion_id": "CI",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 45,
+      "source_row_sha256": "f4a0db7611c635d325bb3ea32e78d886d23a177c18b192802f528b0fcc37404a",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-CI-R046",
+      "text": "Wird verfolgt und bewertet, wie sich die Ergebnisse der Verbesserungen im Laufe der Zeit entwickeln?",
+      "criterion_text": "Wird verfolgt und bewertet, wie sich die Ergebnisse der Verbesserungen im Laufe der Zeit entwickeln?",
+      "criterion_id": "CI",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 46,
+      "source_row_sha256": "eaa7d4710c4a364896c788ef3aa380da0a41dcb566ab92eba3f6391e4ca5cc2a",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-CI-R047",
+      "text": "Werden Verbesserungen auch frühzeitig angestoßen, bevor Probleme auftreten?",
+      "criterion_text": "Werden Verbesserungen auch frühzeitig angestoßen, bevor Probleme auftreten?",
+      "criterion_id": "CI",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 47,
+      "source_row_sha256": "01b75d39f30f88287cbafed5419f69d8a6f09b97605a053074bf1f3fecc3ca9d",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-CI-R048",
+      "text": "Werden die Ziele für die IT-Leistungen an veränderte Unternehmensziele angepasst?",
+      "criterion_text": "Werden die Ziele für die IT-Leistungen an veränderte Unternehmensziele angepasst?",
+      "criterion_id": "CI",
+      "level": 5,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 48,
+      "source_row_sha256": "3b89548e7463a2fe4e7e0b40eb483745411cd827b361b51d1578e4f97f1ef462",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-CI-R049",
+      "text": "Wird das gemeinsame Vorgehen zur Verbesserung weiterentwickelt, damit es die langfristigen Unternehmensziele unterstützt?",
+      "criterion_text": "Wird das gemeinsame Vorgehen zur Verbesserung weiterentwickelt, damit es die langfristigen Unternehmensziele unterstützt?",
+      "criterion_id": "CI",
+      "level": 5,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 49,
+      "source_row_sha256": "b2ba7574829b7478b1952cc61fedfea21d5ca1da8a4adc6a8bc0ef70547605c5",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    }
+  ],
+  "option_sets": {
+    "standard_evidence_answer": [
+      {
+        "id": "yes",
+        "label": "Ja"
+      },
+      {
+        "id": "partial",
+        "label": "Teilweise"
+      },
+      {
+        "id": "no",
+        "label": "Nein"
+      },
+      {
+        "id": "unknown",
+        "label": "Unklar"
+      }
+    ]
+  },
+  "input_defaults": {
+    "template": {
+      "assessment_id": "ASSESSMENT-ID",
+      "assessment_unit_id": "UNIT-ID",
+      "catalog_id": "GOEK-XLS-CI-2026-10-22",
+      "catalog_version": "2026.10.22",
+      "assessment_execution_mode": "draft_preview",
+      "context": {
+        "organization": "",
+        "scope_id": "",
+        "scope_description": "",
+        "services_in_scope": [],
+        "criticality": "",
+        "assessment_period": {
+          "start": null,
+          "end": null
+        },
+        "assessment_date": null,
+        "assessors": [],
+        "scope_reviewed": false,
+        "evidence_reviewed": false
+      },
+      "evidence_register": [],
+      "responses": [],
+      "extensions": {
+        "domain_context": {},
+        "scope_flags": {},
+        "scope_flag_decisions": {},
+        "excluded_question_ids": [],
+        "criterion_ratings": []
+      }
+    }
+  },
+  "common_assessment_policy": {
+    "policy_id": "GOEK-XLSX-PSF-CUMULATIVE-2026-10-22",
+    "policy_version": "2026.10.22",
+    "canonical_fields": {
+      "answer": [
+        "yes",
+        "partial",
+        "no",
+        "unknown"
+      ],
+      "finding": [
+        "fulfilled",
+        "not_fulfilled",
+        "partial",
+        "open"
+      ],
+      "review_status": [
+        "pending",
+        "approved"
+      ],
+      "evidence_status": [
+        "not_checked",
+        "sufficient",
+        "insufficient",
+        "conflicting"
+      ]
+    }
+  },
+  "introduction_source": {
+    "source_row": 39,
+    "source_sheet": "Fragen SVS Kategorien",
+    "source_row_sha256": "ccc654852122396dae9865ed5b8a8cd49d2248f84f14d50d1f314de50286005a"
+  }
+}

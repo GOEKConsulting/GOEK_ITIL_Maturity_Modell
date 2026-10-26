@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "GOEK-XLS-GV-2026-10-22",
+  "catalog_version": "2026.10.22",
+  "component_id": "governance",
+  "metadata": {
+    "title": "Governance",
+    "source": "Fragenkatalog.xlsx",
+    "official_peoplecert_assessment": false,
+    "question_count": 11
+  },
+  "source": {
+    "filename": "Fragenkatalog.xlsx",
+    "sha256": "7c95e3a6d93c04fb183a3dfc8283973a9edd7dd83280f3f935630a205c20d94f",
+    "sheets": [
+      "Fragen SVS Kategorien",
+      "Fragen Practices"
+    ]
+  },
+  "introduction": "In den folgenden Fragen geht es um Governance. Damit ist gemeint, wie die IT geführt wird: wer Ziele und Vorgaben festlegt und wie überprüft wird, ob Ziele erreicht und Vorgaben eingehalten werden.\n\nBeispiele wären die Entscheidung, welche IT-Projekte zuerst umgesetzt werden, oder die Überprüfung, ob die IT ihr Budget einhält.\n\nSind Ihnen diese Zuständigkeiten und Abläufe grundsätzlich bekannt?",
+  "criteria": [
+    {
+      "id": "GV",
+      "name": "Governance",
+      "title": "Governance",
+      "order": 1,
+      "level_requirements": [
+        {
+          "level": 1,
+          "question_ids": [
+            "XLS-GV-R014"
+          ],
+          "criterion_texts": [
+            "Werden einzelne Probleme von der Führung bewertet, überwacht und bei Bedarf Entscheidungen getroffen?"
+          ],
+          "description": "Werden einzelne Probleme von der Führung bewertet, überwacht und bei Bedarf Entscheidungen getroffen?"
+        },
+        {
+          "level": 2,
+          "question_ids": [
+            "XLS-GV-R015",
+            "XLS-GV-R016",
+            "XLS-GV-R017"
+          ],
+          "criterion_texts": [
+            "Entwickelt die IT-Führung regelmäßig aktuelle Vorgaben für die IT? ",
+            "Verfolgt und kontrolliert die Führung die Einhaltung der Vorgaben?",
+            "Stehen für die IT-Vorgaben genug Ressourcen wie Personal, Zeit, Geld und Arbeitsmittel bereit?  "
+          ],
+          "description": "Entwickelt die IT-Führung regelmäßig aktuelle Vorgaben für die IT? \nVerfolgt und kontrolliert die Führung die Einhaltung der Vorgaben?\nStehen für die IT-Vorgaben genug Ressourcen wie Personal, Zeit, Geld und Arbeitsmittel bereit?  "
+        },
+        {
+          "level": 3,
+          "question_ids": [
+            "XLS-GV-R018",
+            "XLS-GV-R019"
+          ],
+          "criterion_texts": [
+            "Sind die Vorgaben der IT auf die Unternehmensziele ausgerichtet?",
+            "Sorgt die Leitung dafür, dass anhand passender Zahlen geprüft wird, ob die Unternehmensziele erreicht werden?"
+          ],
+          "description": "Sind die Vorgaben der IT auf die Unternehmensziele ausgerichtet?\nSorgt die Leitung dafür, dass anhand passender Zahlen geprüft wird, ob die Unternehmensziele erreicht werden?"
+        },
+        {
+          "level": 4,
+          "question_ids": [
+            "XLS-GV-R020",
+            "XLS-GV-R021",
+            "XLS-GV-R022"
+          ],
+          "criterion_texts": [
+            "Stützt sich die Leitung bei ihren Entscheidungen auf verlässliche Daten?",
+            "Wird regelmäßig gemessen und bewertet, ob die Entscheidungen der Leitung die gewünschte Wirkung haben?",
+            "Werden Abweichungen vom vereinbarten Vorgehen geprüft, erkannt und behoben?"
+          ],
+          "description": "Stützt sich die Leitung bei ihren Entscheidungen auf verlässliche Daten?\nWird regelmäßig gemessen und bewertet, ob die Entscheidungen der Leitung die gewünschte Wirkung haben?\nWerden Abweichungen vom vereinbarten Vorgehen geprüft, erkannt und behoben?"
+        },
+        {
+          "level": 5,
+          "question_ids": [
+            "XLS-GV-R023",
+            "XLS-GV-R024"
+          ],
+          "criterion_texts": [
+            "Werden Zuständigkeiten, Vorgaben, Entscheidungswege und Kontrollen regelmäßig geprüft und bei Bedarf verbessert?",
+            "Werden Zuständigkeiten, Entscheidungswege und Kontrollen bei Bedarf an die langfristigen Unternehmensziele und die Anforderungen der Beteiligten angepasst?"
+          ],
+          "description": "Werden Zuständigkeiten, Vorgaben, Entscheidungswege und Kontrollen regelmäßig geprüft und bei Bedarf verbessert?\nWerden Zuständigkeiten, Entscheidungswege und Kontrollen bei Bedarf an die langfristigen Unternehmensziele und die Anforderungen der Beteiligten angepasst?"
+        }
+      ]
+    }
+  ],
+  "rating_units": [],
+  "questions": [
+    {
+      "id": "XLS-GV-R014",
+      "text": "Werden einzelne Probleme von der Führung bewertet, überwacht und bei Bedarf Entscheidungen getroffen?",
+      "criterion_text": "Werden einzelne Probleme von der Führung bewertet, überwacht und bei Bedarf Entscheidungen getroffen?",
+      "criterion_id": "GV",
+      "level": 1,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 14,
+      "source_row_sha256": "48d085bec699dd58aa041786603274deab447e927a9b77313d71599abbfb1ece",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R015",
+      "text": "Entwickelt die IT-Führung regelmäßig aktuelle Vorgaben für die IT? ",
+      "criterion_text": "Entwickelt die IT-Führung regelmäßig aktuelle Vorgaben für die IT? ",
+      "criterion_id": "GV",
+      "level": 2,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 15,
+      "source_row_sha256": "02d2ad3e87ec48bb8c8f85eda5ef176fb9a562b1463a988ad68ea5c04f361fe4",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R016",
+      "text": "Verfolgt und kontrolliert die Führung die Einhaltung der Vorgaben?",
+      "criterion_text": "Verfolgt und kontrolliert die Führung die Einhaltung der Vorgaben?",
+      "criterion_id": "GV",
+      "level": 2,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 16,
+      "source_row_sha256": "b07d3938d3ac12fec64baf1c72983cbc358e31ca704f5d7e582f8018ea3f5229",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R017",
+      "text": "Stehen für die IT-Vorgaben genug Ressourcen wie Personal, Zeit, Geld und Arbeitsmittel bereit?  ",
+      "criterion_text": "Stehen für die IT-Vorgaben genug Ressourcen wie Personal, Zeit, Geld und Arbeitsmittel bereit?  ",
+      "criterion_id": "GV",
+      "level": 2,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 17,
+      "source_row_sha256": "74724480add9b9adf49deda20f26041a6b68b0898d8b1838524303ff858e3373",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R018",
+      "text": "Sind die Vorgaben der IT auf die Unternehmensziele ausgerichtet?",
+      "criterion_text": "Sind die Vorgaben der IT auf die Unternehmensziele ausgerichtet?",
+      "criterion_id": "GV",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 18,
+      "source_row_sha256": "36e17b36ab79194fe616511cee73070118e085c859d8a7fb889381a4efe6ad8f",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R019",
+      "text": "Sorgt die Leitung dafür, dass anhand passender Zahlen geprüft wird, ob die Unternehmensziele erreicht werden?",
+      "criterion_text": "Sorgt die Leitung dafür, dass anhand passender Zahlen geprüft wird, ob die Unternehmensziele erreicht werden?",
+      "criterion_id": "GV",
+      "level": 3,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 19,
+      "source_row_sha256": "6e662e578ab4de9a5f7993076afe7d025aee6168d33ae5df26e7f93e13456e57",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R020",
+      "text": "Stützt sich die Leitung bei ihren Entscheidungen auf verlässliche Daten?",
+      "criterion_text": "Stützt sich die Leitung bei ihren Entscheidungen auf verlässliche Daten?",
+      "criterion_id": "GV",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 20,
+      "source_row_sha256": "f40709d6000eb662141738024d88e2fa6ee703e55a110c04e236ad53fb9db2e9",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R021",
+      "text": "Wird regelmäßig gemessen und bewertet, ob die Entscheidungen der Leitung die gewünschte Wirkung haben?",
+      "criterion_text": "Wird regelmäßig gemessen und bewertet, ob die Entscheidungen der Leitung die gewünschte Wirkung haben?",
+      "criterion_id": "GV",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 21,
+      "source_row_sha256": "2ef9f07e434f12cc2ce9eb8568c91471f96ea17e7716f2571892d0f01445db8b",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R022",
+      "text": "Werden Abweichungen vom vereinbarten Vorgehen geprüft, erkannt und behoben?",
+      "criterion_text": "Werden Abweichungen vom vereinbarten Vorgehen geprüft, erkannt und behoben?",
+      "criterion_id": "GV",
+      "level": 4,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 22,
+      "source_row_sha256": "9cc5b87da1f2947d36769577460768e782fda168d2bf250ed81c88df5f4fdd67",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R023",
+      "text": "Werden Zuständigkeiten, Vorgaben, Entscheidungswege und Kontrollen regelmäßig geprüft und bei Bedarf verbessert?",
+      "criterion_text": "Werden Zuständigkeiten, Vorgaben, Entscheidungswege und Kontrollen regelmäßig geprüft und bei Bedarf verbessert?",
+      "criterion_id": "GV",
+      "level": 5,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 23,
+      "source_row_sha256": "dae7c0c61da7ac82145e38140682098967fe9a7f8f9bb6cbfc3936d717cea94e",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    },
+    {
+      "id": "XLS-GV-R024",
+      "text": "Werden Zuständigkeiten, Entscheidungswege und Kontrollen bei Bedarf an die langfristigen Unternehmensziele und die Anforderungen der Beteiligten angepasst?",
+      "criterion_text": "Werden Zuständigkeiten, Entscheidungswege und Kontrollen bei Bedarf an die langfristigen Unternehmensziele und die Anforderungen der Beteiligten angepasst?",
+      "criterion_id": "GV",
+      "level": 5,
+      "source_filename": "Fragenkatalog.xlsx",
+      "source_sheet": "Fragen SVS Kategorien",
+      "source_row": 24,
+      "source_row_sha256": "c7ba5cea2e7f8cc99d93c0601c8884fa2dd0e3c2f0f4b0c8d9b76d97793a3eda",
+      "answer_option_set": "standard_evidence_answer",
+      "collection_mode": "direct",
+      "checks": [],
+      "evidence_examples": [],
+      "kind": "component_requirement"
+    }
+  ],
+  "option_sets": {
+    "standard_evidence_answer": [
+      {
+        "id": "yes",
+        "label": "Ja"
+      },
+      {
+        "id": "partial",
+        "label": "Teilweise"
+      },
+      {
+        "id": "no",
+        "label": "Nein"
+      },
+      {
+        "id": "unknown",
+        "label": "Unklar"
+      }
+    ]
+  },
+  "input_defaults": {
+    "template": {
+      "assessment_id": "ASSESSMENT-ID",
+      "assessment_unit_id": "UNIT-ID",
+      "catalog_id": "GOEK-XLS-GV-2026-10-22",
+      "catalog_version": "2026.10.22",
+      "assessment_execution_mode": "draft_preview",
+      "context": {
+        "organization": "",
+        "scope_id": "",
+        "scope_description": "",
+        "services_in_scope": [],
+        "criticality": "",
+        "assessment_period": {
+          "start": null,
+          "end": null
+        },
+        "assessment_date": null,
+        "assessors": [],
+        "scope_reviewed": false,
+        "evidence_reviewed": false
+      },
+      "evidence_register": [],
+      "responses": [],
+      "extensions": {
+        "criterion_ratings": []
+      }
+    }
+  },
+  "common_assessment_policy": {
+    "policy_id": "GOEK-XLSX-PSF-CUMULATIVE-2026-10-22",
+    "policy_version": "2026.10.22",
+    "canonical_fields": {
+      "answer": [
+        "yes",
+        "partial",
+        "no",
+        "unknown"
+      ],
+      "finding": [
+        "fulfilled",
+        "not_fulfilled",
+        "partial",
+        "open"
+      ],
+      "review_status": [
+        "pending",
+        "approved"
+      ],
+      "evidence_status": [
+        "not_checked",
+        "sufficient",
+        "insufficient",
+        "conflicting"
+      ]
+    }
+  },
+  "introduction_source": {
+    "source_row": 13,
+    "source_sheet": "Fragen SVS Kategorien",
+    "source_row_sha256": "d82cded259381a6f67ba6014518698e1b8252138c6879c52a5e4743355c37aa6"
+  }
+}
