@@ -31,7 +31,7 @@ migrate((app) => {
     listRule:null, viewRule:'id = @request.auth.id', createRule:null,
     updateRule:'id = @request.auth.id', deleteRule:null,
     fields:[{type:'text',name:'name',required:true,max:120}],
-    passwordAuth:{enabled:true,identityFields:['email']}});
+    authRule:'',passwordAuth:{enabled:true,identityFields:['email']}});
   app.save(users);
   app.save(new Collection({type:'base',name:'assessment_projects',
     listRule:null,viewRule:null,createRule:null,updateRule:null,deleteRule:null,
@@ -218,7 +218,7 @@ try:
         status,user=call('/api/collections/team_users/records',{'email':email,'password':password,'passwordConfirm':password,'name':'Test '+str(n)},root['token'])
         expect(status==200,'create isolated team user')
         status,auth=call('/api/collections/team_users/auth-with-password',{'identity':email,'password':password})
-        expect(status==200,'team user login')
+        expect(status==200,'team user login: '+str(status)+' '+str(auth))
         users.append((user,auth['token']))
     a,b,c=[row[1] for row in users]
     expect(call('/api/goek/workspace')[0]==401,'anonymous workspace denied')
