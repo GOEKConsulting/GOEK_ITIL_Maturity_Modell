@@ -11,7 +11,7 @@ apt-get install -y ca-certificates curl unzip git nginx certbot python3-certbot-
 id goek-itil >/dev/null 2>&1 || useradd --system --home-dir /var/lib/goek-itil --shell /usr/sbin/nologin goek-itil
 mkdir -p "$BASE/pb_hooks" "$BASE/pb_migrations" "$BASE/public" /var/lib/goek-itil
 if [ ! -x "$BASE/pocketbase" ]; then
-  curl --fail --location --proto '=https' --tlsv1.2 https://ganigeorgiev.com/pocketbase/pocketbase/releases/download/v0.41.0/pocketbase_0.41.0_linux_amd64.zip -o /root/goek-pocketbase.zip
+  curl --fail --location --proto '=https' --tlsv1.2 https://ganigeorgiev.com/meta/pocketbase/pocketbase/download/v0.41.0/pocketbase_0.41.0_linux_amd64.zip -o /root/goek-pocketbase.zip
   unzip -o /root/goek-pocketbase.zip pocketbase -d "$BASE"
   chmod 755 "$BASE/pocketbase"
 fi
