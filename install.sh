@@ -55,6 +55,7 @@ migrate((app) => {
   settings.logs.maxDays=14;
   settings.logs.logIP=false;
   settings.rateLimits.enabled=true;
+  settings.trustedProxy.headers=['X-Real-IP'];
   settings.backups.cron='0 2 * * *';
   settings.backups.cronMaxKeep=30;
   app.save(settings);
@@ -217,6 +218,7 @@ try:
         email='user'+str(n)+'@example.invalid'
         status,user=call('/api/collections/team_users/records',{'email':email,'password':password,'passwordConfirm':password,'name':'Test '+str(n)},root['token'])
         expect(status==200,'create isolated team user')
+        time.sleep(3.2)  # Respect the enabled authentication rate limit.
         status,auth=call('/api/collections/team_users/auth-with-password',{'identity':email,'password':password})
         expect(status==200,'team user login: '+str(status)+' '+str(auth))
         users.append((user,auth['token']))
@@ -226,7 +228,7 @@ try:
     project={'id':'integration-project','name':'Test project','payload':{'assessments':{'test':{}}}}
     change={'id':project['id'],'expected':0,'kind':'active','data':project}
     status,saved=call('/api/goek/workspace',{'changes':[change],'meta':{'activeId':project['id']}},a)
-    expect(status==200 and saved['versions'][project['id']]==1,'project persisted')
+    expect(status==200 and saved['versions'][project['id']]==1,'project persisted: '+str(status)+' '+str(saved))
     expect(call('/api/goek/workspace',token=b)[1]['workspace']['projects']==[],'unshared project hidden')
     expect(call('/api/goek/workspace',{'changes':[dict(change,expected=1)],'meta':{}},b)[0]==403,'unauthorized mutation denied')
     expect(call('/api/goek/sharing',{'id':project['id'],'users':[users[1][0]['id']]},a)[0]==200,'owner can share project')
