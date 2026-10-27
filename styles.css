@@ -35,5 +35,6 @@
 .category-results-table tfoot tr{background-color:#FCF7F8;background-image:repeating-linear-gradient(135deg,transparent 0 6px,rgba(149,30,56,.08) 6px 7px)}
 @media print{.category-results-table tr>:nth-child(3),.category-results-table .category-stage-value,.category-results-table tfoot tr{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 .source-questionnaire .question-stage-nav .stage-button{white-space:nowrap;flex-basis:52px}
+.source-questionnaire .question-toolbar .psf-description{flex:1 1 420px;min-width:0;line-height:1.65;white-space:pre-line;overflow-wrap:anywhere}
 @media(min-width:650px) and (max-width:850px){.source-questionnaire .question-layout:not(.conversation-mode){grid-template-columns:190px minmax(0,1fr)}.source-questionnaire .question-index .question-list{display:block}}
 @media(max-width:649px){.source-questionnaire .question-index .question-list{display:block;max-height:180px;overflow:auto}}

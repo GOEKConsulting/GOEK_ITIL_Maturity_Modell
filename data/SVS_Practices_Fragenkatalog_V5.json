@@ -2167,13 +2167,15 @@
           "id": "PR01-PSF01",
           "title": "Strategiegerechte Zielarchitektur",
           "order": 1,
-          "source_row": 7
+          "source_row": 7,
+          "description": "Es ist klar, wie Organisation und IT künftig aufgebaut sein und zusammenarbeiten sollen, um die Unternehmensziele zu unterstützen."
         },
         {
           "id": "PR01-PSF02",
           "title": "Entwicklung zum architektonischen Zielzustand",
           "order": 2,
-          "source_row": 13
+          "source_row": 13,
+          "description": "Die bestehenden Leistungen, Systeme und Abläufe werden durch aufeinander abgestimmte Veränderungen gezielt in diese Richtung weiterentwickelt."
         }
       ],
       "criteria": [
@@ -2533,13 +2535,15 @@
           "id": "PR02-PSF01",
           "title": "Wirksames Vorgehen zur kontinuierlichen Verbesserung",
           "order": 1,
-          "source_row": 19
+          "source_row": 19,
+          "description": "Ein gemeinsames, im Arbeitsalltag genutztes Vorgehen ermöglicht, sinnvolle Verbesserungen zu erkennen, auszuwählen und umzusetzen."
         },
         {
           "id": "PR02-PSF02",
           "title": "Verbesserungen wirksam und effizient realisieren",
           "order": 2,
-          "source_row": 25
+          "source_row": 25,
+          "description": "Verbesserungen erzielen den beabsichtigten Nutzen mit einem angemessenen Einsatz von Zeit, Geld und Personal."
         }
       ],
       "criteria": [
@@ -2899,13 +2903,15 @@
           "id": "PR03-PSF01",
           "title": "Sicherheitsrichtlinien und -pläne entwickeln und pflegen + Informationssicherheitsrisiken mindern",
           "order": 1,
-          "source_row": 31
+          "source_row": 31,
+          "description": "Klare Sicherheitsregeln und Pläne verankern den Schutz von Informationen in allen betroffenen Aufgaben und Abläufen."
         },
         {
           "id": "PR03-PSF02",
           "title": "Sicherheitspläne üben und testen",
           "order": 2,
-          "source_row": 37
+          "source_row": 37,
+          "description": "Geeignete Schutzmaßnahmen begrenzen Informationsrisiken; Tests und Übungen überprüfen, ob die Sicherheitspläne funktionieren."
         }
       ],
       "criteria": [
@@ -3044,7 +3050,7 @@
         },
         {
           "id": "XLS-PR03-R032",
-          "text": "Sind die dokumentierten Sicherheitsregeln mit allen zuständigen Bereichen und Daten verarbeitenden Anbietern abgestimmt und werden sie dort verbindlich angewendet?",
+          "text": "Sind die dokumentierten Sicherheitsregeln mit allen Bereichen abgestimmt und werden sie dort verbindlich angewendet?",
           "criterion_text": "Gemeinsame, dokumentierte Sicherheitsregeln wurden von allen beteiligten Bereichen und informationsverarbeitenden Anbietern entwickelt und werden verbindlich angewendet.",
           "criterion_id": "PR03-PSF01",
           "level": 3,
@@ -3110,7 +3116,7 @@
         },
         {
           "id": "XLS-PR03-R035",
-          "text": "Wird regelmäßig verbessert, wie Sicherheitsregeln gepflegt und in die Arbeit eingebunden werden, und ihre Anwendung überprüft?",
+          "text": "Wird die Anwendung der Sicherheitsregeln geprüft und werden sie regelmäßig verbessert?",
           "criterion_text": "Die Pflege und Einbindung von Sicherheitsregeln wird laufend verbessert und die Wirkung auf deren Anwendung überprüft.",
           "criterion_id": "PR03-PSF01",
           "level": 5,
@@ -3132,7 +3138,7 @@
         },
         {
           "id": "XLS-PR03-R037",
-          "text": "Werden Informationsrisiken in Ihrem Arbeitsbereich durch Schutzmaßnahmen auf ein von den Verantwortlichen ihres Bereichs akzeptiertes Maß begrenzt?",
+          "text": "Werden, durch Schutzmaßnahmen, Informationsrisiken in Ihrem Arbeitsbereich begrenzt?",
           "criterion_text": "Die Schutzmaßnahmen begrenzen die erkannten Informationsrisiken auf das von den zuständigen Verantwortlichen akzeptierte Maß.",
           "criterion_id": "PR03-PSF02",
           "level": 2,
@@ -3220,7 +3226,7 @@
         },
         {
           "id": "XLS-PR03-R041",
-          "text": "Werden Sicherheitsvorfälle und Testergebnisse anhand von Zahlen ausgewertet, um den Schutz betroffener IT-Leistungen gezielt anzupassen?",
+          "text": "Werden, wenn möglich, Sicherheitsvorfälle und Testergebnisse anhand von Zahlen ausgewertet, um den Schutz betroffener IT-Leistungen gezielt anzupassen?",
           "criterion_text": "Häufigkeit und Folgen von Sicherheitsvorfällen sowie Testergebnisse werden ausgewertet, um Schutzmaßnahmen für betroffene IT-Leistungen gezielt anzupassen.",
           "criterion_id": "PR03-PSF02",
           "level": 4,
@@ -3289,13 +3295,15 @@
           "id": "PR04-PSF01",
           "title": "Wertvolles Wissen schaffen, erhalten, teilen und nutzen",
           "order": 1,
-          "source_row": 44
+          "source_row": 44,
+          "description": "Nützliches Wissen wird aufgebaut, aktuell gehalten, geteilt und bei der Arbeit verwendet."
         },
         {
           "id": "PR04-PSF02",
           "title": "Informationen wirksam für Entscheidungen nutzen",
           "order": 2,
-          "source_row": 51
+          "source_row": 51,
+          "description": "Die Beteiligten können bei Entscheidungen auf passende, verlässliche Informationen zugreifen und nutzen diese."
         }
       ],
       "criteria": [
@@ -3478,7 +3486,7 @@
         },
         {
           "id": "XLS-PR04-R047",
-          "text": "Können die Mitarbeitenden benötigtes Wissen nach einheitlichen Ablage- und Zugangsregeln schnell und in aktueller Form finden?",
+          "text": "Können die Mitarbeitenden benötigtes Wissen nach einheitlichen Ablage- und Zugangsregeln in aktueller Form finden?",
           "criterion_text": "Die benötigten Wissensinhalte sind nach gemeinsamen Ablage- und Zugangsregeln aktuell und für die vorgesehenen Nutzer auffindbar.",
           "criterion_id": "PR04-PSF01",
           "level": 3,
@@ -3679,13 +3687,15 @@
           "id": "PR05-PSF01",
           "title": "Messungen an Zielen ausrichten",
           "order": 1,
-          "source_row": 57
+          "source_row": 57,
+          "description": "Messungen richten sich nach den Zielen der Organisation und liefern verlässliche, rechtzeitig verfügbare Daten."
         },
         {
           "id": "PR05-PSF02",
           "title": "Entscheidungen durch wirksames Reporting unterstützen",
           "order": 2,
-          "source_row": 65
+          "source_row": 65,
+          "description": "Berichte bereiten die Ergebnisse so auf, dass die Verantwortlichen sie für fundierte Entscheidungen nutzen können."
         }
       ],
       "criteria": [
@@ -4093,13 +4103,15 @@
           "id": "PR06-PSF01",
           "title": "Eine veränderungsfähige Kultur entwickeln + Ganzheitliches OCM-Vorgehen entwickeln und verbessern",
           "order": 1,
-          "source_row": 71
+          "source_row": 71,
+          "description": "Die Beteiligten sind bereit und in der Lage, Veränderungen mitzutragen; das Unternehmen unterstützt dies durch ein gemeinsames, weiterentwickeltes Vorgehen."
         },
         {
           "id": "PR06-PSF02",
           "title": "Veränderungen wirksam, zufriedenstellend und regelkonform realisieren",
           "order": 2,
-          "source_row": 78
+          "source_row": 78,
+          "description": "Organisatorische Veränderungen erreichen ihre Ziele, werden von den Beteiligten angenommen und erfüllen die geltenden Vorgaben."
         }
       ],
       "criteria": [
@@ -4306,7 +4318,7 @@
         },
         {
           "id": "XLS-PR06-R075",
-          "text": "Wird vor der Umstellung gemessen, wie viele Mitarbeitende ihre neuen Aufgaben bereits ausführen können, um gefährdete Abläufe gezielt zu unterstützen?",
+          "text": "Wird vor Umstellungen geprüft, wie viele Mitarbeitende ihre neuen Aufgaben schon erledigen können, um gefährdete Abläufe gezielt zu unterstützen?",
           "criterion_text": "Vor einer Umstellung wird ermittelt, welcher Anteil der Beteiligten die neuen Aufgaben ausführen kann, um gefährdete Arbeitsabläufe gezielt zu unterstützen.",
           "criterion_id": "PR06-PSF01",
           "level": 4,
@@ -4438,7 +4450,7 @@
         },
         {
           "id": "XLS-PR06-R082",
-          "text": "Werden Zielabweichungen und Regelverstöße bei Veränderungen anhand von Zahlen und ihren Folgen für IT-Leistungen ausgewertet, um die Umsetzung zu korrigieren?",
+          "text": "Werden Zielabweichungen und Regelverstöße anhand von Zahlen und ihren Folgen für IT-Leistungen ausgewertet, um die Umsetzung zu korrigieren?",
           "criterion_text": "Gemessene Zielabweichungen und Verstöße gegen Vorgaben werden nach ihren Folgen für betroffene IT-Leistungen ausgewertet, um die Umstellung gezielt zu korrigieren.",
           "criterion_id": "PR06-PSF02",
           "level": 4,
@@ -4507,13 +4519,15 @@
           "id": "PR07-PSF01",
           "title": "Investitionen fundiert und ressourcengerecht entscheiden",
           "order": 1,
-          "source_row": 85
+          "source_row": 85,
+          "description": "Investitionen in Vorhaben, Produkte und Leistungen werden so ausgewählt, dass sie die Unternehmensziele innerhalb der verfügbaren Mittel unterstützen."
         },
         {
           "id": "PR07-PSF02",
           "title": "Portfolios laufend überwachen und optimieren",
           "order": 2,
-          "source_row": 91
+          "source_row": 91,
+          "description": "Die Gesamtheit der laufenden und geplanten Vorhaben und Leistungen wird überprüft und an ihren Nutzen, ihre Risiken und veränderte Prioritäten angepasst."
         }
       ],
       "criteria": [
@@ -4826,7 +4840,7 @@
         },
         {
           "id": "XLS-PR07-R095",
-          "text": "Wird das Vorgehen zur Überprüfung des IT-Portfolios regelmäßig verbessert und kontrolliert, ob dadurch rechtzeitiger entschieden wird?",
+          "text": "Wird das Vorgehen zur Überprüfung des IT-Portfolios regelmäßig verbessert und kontrolliert?",
           "criterion_text": "Die gemeinsame Überprüfung der Vorhaben und Leistungen wird laufend verbessert und ihr Nutzen für rechtzeitige Anpassungsentscheidungen überprüft.",
           "criterion_id": "PR07-PSF02",
           "level": 5,
@@ -4873,13 +4887,15 @@
           "id": "PR08-PSF01",
           "title": "Wirksames Programm- und Projektmanagement etablieren",
           "order": 1,
-          "source_row": 97
+          "source_row": 97,
+          "description": "Ein geeignetes gemeinsames Vorgehen ermöglicht die verlässliche Planung und Steuerung von Projekten und zusammengehörigen Projektvorhaben."
         },
         {
           "id": "PR08-PSF02",
           "title": "Programme und Projekte erfolgreich realisieren",
           "order": 2,
-          "source_row": 103
+          "source_row": 103,
+          "description": "Projekte erreichen die vereinbarten Ergebnisse und den erwarteten Nutzen unter Berücksichtigung der vorgesehenen Zeit, Kosten und Qualitätsanforderungen."
         }
       ],
       "criteria": [
@@ -4996,7 +5012,7 @@
       "questions": [
         {
           "id": "XLS-PR08-R097",
-          "text": "Werden in Ihrem Bereich Projekte nach einem verlässlichen Vorgehen geplant und gesteuert, auch wenn sie mit anderen Vorhaben zusammenhängen?",
+          "text": "Werden in Ihrem Bereich Projekte nach einem verlässlichen Vorgehen geplant und gesteuert?",
           "criterion_text": "Projekte und zusammengehörige Vorhaben werden mit einem verlässlichen Vorgehen geplant und gesteuert.",
           "criterion_id": "PR08-PSF01",
           "level": 2,
@@ -5062,7 +5078,7 @@
         },
         {
           "id": "XLS-PR08-R100",
-          "text": "Werden Termin-, Kosten- und andere Planabweichungen über mehrere Projekte hinweg anhand von Zahlen ausgewertet, um ihre Folgen für Mittel und IT-Leistungen zu steuern?",
+          "text": "Werden über mehrere Projekte hinweg Termin-, Kosten- und andere Planabweichungen anhand von Zahlen ausgewertet, um ihre Folgen für Mittel und IT-Leistungen zu steuern?",
           "criterion_text": "Gemessene Planabweichungen mehrerer Projekte werden gemeinsam ausgewertet, um Auswirkungen auf benötigte Mittel und betroffene IT-Leistungen zu steuern.",
           "criterion_id": "PR08-PSF01",
           "level": 4,
@@ -5194,7 +5210,7 @@
         },
         {
           "id": "XLS-PR08-R107",
-          "text": "Wird der tatsächliche Nutzen abgeschlossener Projekte gemessen und mit den Zielen verglichen, um Entscheidungen über die betroffenen IT-Leistungen zu unterstützen?",
+          "text": "Wird der tatsächliche Nutzen abgeschlossener Projekte gemessen und mit den geplanten Zielen verglichen?",
           "criterion_text": "Der gemessene Nutzen wird nach der Übergabe mit den vereinbarten Zielen verglichen und für Entscheidungen über die betroffenen IT-Leistungen genutzt.",
           "criterion_id": "PR08-PSF02",
           "level": 4,
@@ -5263,13 +5279,15 @@
           "id": "PR09-PSF01",
           "title": "Einheitliches wirksames Beziehungsmanagement entwickeln",
           "order": 1,
-          "source_row": 110
+          "source_row": 110,
+          "description": "Ein gemeinsames Vorgehen unterstützt den verlässlichen Umgang mit internen und externen Beteiligten und wird anhand neuer Erfahrungen weiterentwickelt."
         },
         {
           "id": "PR09-PSF02",
           "title": "Wirksame und gesunde interne und externe Beziehungen",
           "order": 2,
-          "source_row": 116
+          "source_row": 116,
+          "description": "Die Beziehungen innerhalb des Unternehmens und zu externen Beteiligten ermöglichen eine vertrauensvolle und wirksame Zusammenarbeit."
         }
       ],
       "criteria": [
@@ -5452,7 +5470,7 @@
         },
         {
           "id": "XLS-PR09-R113",
-          "text": "Wird anhand von Bearbeitungszeiten und überfälligen Zusagen ausgewertet, wo die Zusammenarbeit IT-Leistungen verzögert?",
+          "text": "Wird anhand von Bearbeitungszeiten und überfälligen Genehmigungen ausgewertet, wo die Zusammenarbeit IT-Leistungen verzögert?",
           "criterion_text": "Bearbeitungszeiten offener Anliegen und überfällige Vereinbarungen werden ausgewertet, um Verzögerungen bei gemeinsam erbrachten IT-Leistungen zu beheben.",
           "criterion_id": "PR09-PSF01",
           "level": 4,
@@ -5562,7 +5580,7 @@
         },
         {
           "id": "XLS-PR09-R119",
-          "text": "Ist die regelmäßige Bewertung der Zusammenarbeit fest mit der Planung und Auswertung gemeinsamer IT-Leistungen verbunden?",
+          "text": "Ist die Bewertung der Zusammenarbeit fest mit der Planung und Auswertung gemeinsamer IT-Leistungen verbunden?",
           "criterion_text": "Die regelmäßige Überprüfung der Zusammenarbeit ist fest mit der gemeinsamen Planung und Bewertung von IT-Leistungen verbunden.",
           "criterion_id": "PR09-PSF02",
           "level": 3,
@@ -5653,13 +5671,15 @@
           "id": "PR10-PSF01",
           "title": "Risikokultur und Risikoidentifikation",
           "order": 1,
-          "source_row": 123
+          "source_row": 123,
+          "description": "Gemeinsame Vorgaben klären den Umgang mit Risiken; klare Zuständigkeiten und eine offene Meldekultur ermöglichen deren frühzeitige Erkennung."
         },
         {
           "id": "PR10-PSF02",
           "title": "Risiken analysieren und bewerten + Risiken behandeln, überwachen und überprüfen",
           "order": 2,
-          "source_row": 130
+          "source_row": 130,
+          "description": "Erkannte Risiken werden bewertet, angemessen behandelt und laufend überwacht. Veränderte Bedingungen führen zu einer erneuten Bewertung."
         }
       ],
       "criteria": [
@@ -6000,7 +6020,7 @@
         },
         {
           "id": "XLS-PR10-R134",
-          "text": "Werden gemessene Schäden und Kosten von Maßnahmen mit den verbleibenden Risiken verglichen, um den Schutz der IT-Leistungen anzupassen?",
+          "text": "Werden bisherige Schäden, die Kosten der Schutzmaßnahmen und die verbleibenden Risiken verglichen, um den IT-Schutz bei Bedarf anzupassen?",
           "criterion_text": "Messwerte zu Schäden und Maßnahmenaufwand werden mit den verbleibenden Risiken verglichen, um den Schutz betroffener IT-Leistungen gezielt anzupassen.",
           "criterion_id": "PR10-PSF02",
           "level": 4,
@@ -6091,13 +6111,15 @@
           "id": "PR11-PSF01",
           "title": "Unterstützung für Unternehmensziele und Anforderungen der Beteiligten",
           "order": 1,
-          "source_row": 138
+          "source_row": 138,
+          "description": "Die finanzielle Planung und Steuerung der IT-Leistungen unterstützt die Unternehmensziele und die Anforderungen der Beteiligten."
         },
         {
           "id": "PR11-PSF02",
           "title": "Verlässliche Finanzinformationen für Entscheidungen",
           "order": 2,
-          "source_row": 145
+          "source_row": 145,
+          "description": "Für Entscheidungen stehen rechtzeitig verlässliche Informationen über Kosten, Budgets und Finanzierung der IT-Leistungen zur Verfügung."
         }
       ],
       "criteria": [
@@ -6324,7 +6346,7 @@
         },
         {
           "id": "XLS-PR11-R143",
-          "text": "Wird die Finanzplanung für IT-Leistungen regelmäßig verbessert und geprüft, ob die Leistungen dadurch sicherer finanziert sind?",
+          "text": "Wird die Finanzplanung für IT-Leistungen regelmäßig verbessert und geprüft, um die Finanzierungen dadurch sicherer zu planen?",
           "criterion_text": "Die finanzielle Planung und Steuerung der IT-Leistungen wird laufend verbessert und ihr Nutzen für die verlässliche Finanzierung überprüft.",
           "criterion_id": "PR11-PSF01",
           "level": 5,
@@ -6434,7 +6456,7 @@
         },
         {
           "id": "XLS-PR11-R149",
-          "text": "Wird das Aufbereiten und Bereitstellen von Finanzinformationen fortlaufend verbessert und überprüft, ob Entscheidungen dadurch sicherer und rechtzeitiger getroffen werden?",
+          "text": "Wird das Aufbereiten und Bereitstellen von Finanzinformationen fortlaufend verbessert und überprüft, um Entscheidungen dadurch sicherer und rechtzeitiger treffen zu können?",
           "criterion_text": "Die Aufbereitung und Bereitstellung von Finanzinformationen wird laufend verbessert und ihre Wirkung auf verlässliche, rechtzeitige Entscheidungen überprüft.",
           "criterion_id": "PR11-PSF02",
           "level": 5,
@@ -6481,13 +6503,15 @@
           "id": "PR12-PSF01",
           "title": "Wirksame und tragfähige Strategien an veränderten Stakeholderbedürfnissen ausrichten",
           "order": 1,
-          "source_row": 151
+          "source_row": 151,
+          "description": "Die Strategie gibt eine tragfähige Richtung vor und passt zu den heutigen und künftigen Anforderungen des Unternehmens und seiner Beteiligten."
         },
         {
           "id": "PR12-PSF02",
           "title": "Strategien und Modelle vermitteln und in Practices und Wertströmen verankern",
           "order": 2,
-          "source_row": 160
+          "source_row": 160,
+          "description": "Die vereinbarte Strategie ist bekannt und wird in Entscheidungen, Arbeitsabläufen und der Weiterentwicklung des Unternehmens umgesetzt."
         }
       ],
       "criteria": [
@@ -6943,19 +6967,22 @@
           "id": "PR13-PSF01",
           "title": "Strategiegerechte Beschaffung und Bezugsmodelle",
           "order": 1,
-          "source_row": 167
+          "source_row": 167,
+          "description": "Die Regeln für die Auswahl und den Einsatz externer Anbieter unterstützen die Unternehmensziele."
         },
         {
           "id": "PR13-PSF02",
           "title": "Externe Services wirksam integrieren",
           "order": 2,
-          "source_row": 173
+          "source_row": 173,
+          "description": "Die Zusammenarbeit mit Anbietern erfüllt die geltenden Vorgaben, und ihre Leistungen sind zuverlässig in die eigenen IT-Leistungen eingebunden."
         },
         {
           "id": "PR13-PSF03",
           "title": "Wirksame und regelkonforme Lieferantenbeziehungen",
           "order": 3,
-          "source_row": 179
+          "source_row": 179,
+          "description": "Externe Lieferungen und Leistungen werden regelmäßig geprüft, Risiken identifiziert und in Zusammenarbeit weiterentwickelt."
         }
       ],
       "criteria": [
@@ -7143,7 +7170,7 @@
         },
         {
           "id": "XLS-PR13-R168",
-          "text": "Wenden Fachbereiche, IT und Einkauf bei der Anbieterauswahl einheitliche, dokumentierte Regeln mit klaren Zuständigkeiten an?",
+          "text": "Wenden Fachbereiche, IT und Einkauf bei der Anbieterauswahl jeweils einheitliche, dokumentierte Regeln mit klaren Zuständigkeiten an?",
           "criterion_text": "Fachbereiche, IT und Einkauf wenden gemeinsame, dokumentierte Regeln mit klaren Zuständigkeiten für die Anbieterauswahl an.",
           "criterion_id": "PR13-PSF01",
           "level": 3,
@@ -7297,7 +7324,7 @@
         },
         {
           "id": "XLS-PR13-R176",
-          "text": "Werden die gemessenen Leistungen der Anbieter regelmäßig mit ihren Zusagen verglichen, um bei Problemen mit eigenen IT-Leistungen gegenzusteuern?",
+          "text": "Werden die gemessenen Leistungen der Anbieter regelmäßig mit ihren Zusagen verglichen, um bei Problemen mit Lieferanten/externen Dienstleistern gegenzusteuern?",
           "criterion_text": "Die Leistungswerte der Anbieter werden regelmäßig mit den vereinbarten Zielen verglichen, um nötige Korrekturen für die eigenen IT-Leistungen festzulegen.",
           "criterion_id": "PR13-PSF02",
           "level": 4,
@@ -7341,7 +7368,7 @@
         },
         {
           "id": "XLS-PR13-R179",
-          "text": "Werden wichtige Lieferungen und laufende Leistungen in Ihrem Arbeitsbereich auf die vereinbarten Anforderungen und geltenden Regeln geprüft und Abweichungen mit dem Anbieter geklärt?",
+          "text": "Werden Lieferungen und laufende Leistungen in Ihrem Arbeitsbereich auf die vereinbarten Anforderungen und geltenden Regeln geprüft und Abweichungen mit dem Anbieter geklärt?",
           "criterion_text": "Wesentliche Lieferungen und laufende Leistungen werden auf vereinbarte Anforderungen und maßgebliche Vorgaben geprüft und Abweichungen mit dem Lieferanten bearbeitet.",
           "criterion_id": "PR13-PSF03",
           "level": 2,
@@ -7460,13 +7487,15 @@
           "id": "PR14-PSF01",
           "title": "Personal- und Talentmanagement an der Strategie ausrichten",
           "order": 1,
-          "source_row": 184
+          "source_row": 184,
+          "description": "Planung, Entwicklung und Verwaltung des Personals richten sich nach den heutigen und künftigen Unternehmenszielen."
         },
         {
           "id": "PR14-PSF02",
           "title": "Motivierte und kompetente Mitarbeitende tragen zu den Zielen bei",
           "order": 2,
-          "source_row": 190
+          "source_row": 190,
+          "description": "Ausreichend viele qualifizierte und motivierte Mitarbeitende stehen in den passenden Rollen zur Verfügung und tragen zum Erreichen der Unternehmensziele bei."
         }
       ],
       "criteria": [
@@ -7803,7 +7832,7 @@
         },
         {
           "id": "XLS-PR14-R195",
-          "text": "Wird regelmäßig verbessert, wie Mitarbeitende gewonnen, weitergebildet und gehalten werden, und der Erfolg überprüft?",
+          "text": "Wird regelmäßig verbessert und der Erfolg überprüft, wie Mitarbeitende gewonnen, weitergebildet und gehalten werden?",
           "criterion_text": "Die Verfahren zur Gewinnung, Qualifizierung und Bindung von Mitarbeitenden werden laufend verbessert und ihre Wirkung überprüft.",
           "criterion_id": "PR14-PSF02",
           "level": 5,
@@ -7850,13 +7879,15 @@
           "id": "PR15-PSF01",
           "title": "Verfügbarkeitsanforderungen ermitteln + Verfügbarkeit messen, bewerten und berichten",
           "order": 1,
-          "source_row": 197
+          "source_row": 197,
+          "description": "Die Anforderungen an die Verfügbarkeit der IT-Leistungen sind bekannt; ihre tatsächliche Verfügbarkeit wird gemessen, bewertet und den Verantwortlichen mitgeteilt."
         },
         {
           "id": "PR15-PSF02",
           "title": "Verfügbarkeitsrisiken behandeln",
           "order": 2,
-          "source_row": 204
+          "source_row": 204,
+          "description": "Ausfallrisiken werden wirksam begrenzt, damit die vereinbarte Verfügbarkeit erreicht wird."
         }
       ],
       "criteria": [
@@ -8083,7 +8114,7 @@
         },
         {
           "id": "XLS-PR15-R202",
-          "text": "Wird das Vorgehen zur Festlegung und Messung der Verfügbarkeit laufend verbessert und der Nutzen überprüft?",
+          "text": "Wird laufend verbessert, wie die Verfügbarkeit festgelegt und gemessen wird, und wird geprüft, welchen Nutzen dieses Vorgehen hat?",
           "criterion_text": "Das Vorgehen zur Ermittlung und Bewertung der Verfügbarkeit wird laufend verbessert und der Nutzen überprüft.",
           "criterion_id": "PR15-PSF01",
           "level": 5,
@@ -8105,7 +8136,7 @@
         },
         {
           "id": "XLS-PR15-R204",
-          "text": "Erreichen die wichtigen IT-Leistungen in Ihrem Bereich meistens die vereinbarte Verfügbarkeit?",
+          "text": "Erreichen die wichtigen IT-Leistungen in Ihrem Bereich die vereinbarte Verfügbarkeit?",
           "criterion_text": "Die wesentlichen IT-Leistungen erreichen im Regelfall die vereinbarte Verfügbarkeit.",
           "criterion_id": "PR15-PSF02",
           "level": 2,
@@ -8240,13 +8271,15 @@
           "id": "PR16-PSF01",
           "title": "Einheitliches Vorgehen zur Business Analysis etablieren und verbessern",
           "order": 1,
-          "source_row": 210
+          "source_row": 210,
+          "description": "Die Analyse von Anforderungen und Geschäftsproblemen folgt einem wirksamen, gemeinsam abgestimmten Vorgehen, das weiterentwickelt wird."
         },
         {
           "id": "PR16-PSF02",
           "title": "Bedarfe verstehen und durch geeignete Lösungsvorschläge unterstützen",
           "order": 2,
-          "source_row": 216
+          "source_row": 216,
+          "description": "Die heutigen und künftigen Bedürfnisse des Unternehmens und seiner Kunden werden verstanden und rechtzeitig in geeignete, wirtschaftliche Lösungsvorschläge übersetzt."
         }
       ],
       "criteria": [
@@ -8493,7 +8526,7 @@
         },
         {
           "id": "XLS-PR16-R217",
-          "text": "Sind die mit Fachbereichen und Kunden abgestimmten Anforderungen samt ihrer Wichtigkeit aktuell dokumentiert und für die zuständigen Stellen zugänglich?",
+          "text": "Sind abgestimmte Anforderungen samt ihrer Wichtigkeit aktuell dokumentiert und für die zuständigen Stellen zugänglich?",
           "criterion_text": "Die von Fachbereichen und Kunden bestätigten Anforderungen sind mit ihrer Bedeutung aktuell dokumentiert und für die beteiligten Bereiche zugänglich.",
           "criterion_id": "PR16-PSF02",
           "level": 3,
@@ -8606,7 +8639,8 @@
           "id": "PR17-PSF01",
           "title": "Kapazitäts- und Leistungsanforderungen ermitteln + Kapazität und Leistung messen, bewerten und berichten",
           "order": 1,
-          "source_row": 222
+          "source_row": 222,
+          "description": "Der heutige und künftige Bedarf an Leistung und Kapazität ist bekannt; die tatsächlich verfügbare Leistung und Kapazität werden gemessen, bewertet und berichtet."
         }
       ],
       "criteria": [
@@ -8821,19 +8855,22 @@
           "id": "PR18-PSF01",
           "title": "Änderungen rechtzeitig und wirksam realisieren",
           "order": 1,
-          "source_row": 230
+          "source_row": 230,
+          "description": "IT-Änderungen erreichen rechtzeitig die vereinbarten Ergebnisse und erfüllen die Erwartungen der Betroffenen."
         },
         {
           "id": "PR18-PSF02",
           "title": "Negative Änderungsfolgen begrenzen",
           "order": 2,
-          "source_row": 236
+          "source_row": 236,
+          "description": "Unerwünschte Auswirkungen von IT-Änderungen werden begrenzt; erforderliche Freigaben sowie interne und externe Vorgaben werden eingehalten."
         },
         {
           "id": "PR18-PSF03",
           "title": "Stakeholderzufriedenheit sichern",
           "order": 3,
-          "source_row": 243
+          "source_row": 243,
+          "description": "Auf Änderungen und Vorschläge von beteiligten Stakeholdern wird bei der Druchführung geachtet. Die Zufriedenheit wird mit belegbaren Daten sicher gestellt"
         }
       ],
       "criteria": [
@@ -9001,7 +9038,7 @@
       "questions": [
         {
           "id": "XLS-PR18-R230",
-          "text": "Erreichen IT-Änderungen in Ihrem Arbeitsbereich meist das vereinbarte Ergebnis zum zugesagten Zeitpunkt?",
+          "text": "Erreichen IT-Änderungen in Ihrem Arbeitsbereich das vereinbarte Ergebnis zum zugesagten Zeitpunkt?",
           "criterion_text": "IT-Änderungen erreichen im Regelfall die mit den Betroffenen vereinbarten Ergebnisse zu den zugesagten Zeitpunkten.",
           "criterion_id": "PR18-PSF01",
           "level": 2,
@@ -9023,7 +9060,7 @@
         },
         {
           "id": "XLS-PR18-R231",
-          "text": "Planen die zuständigen Personen IT-Änderungen nach einheitlichen, schriftlich festgehaltenen Regeln, die Art und Dringlichkeit berücksichtigen?",
+          "text": "Planen die zuständigen Personen IT-Änderungen nach einheitlichen, schriftlich festgehaltenen Regeln, die Auswirkung und Dringlichkeit berücksichtigen?",
           "criterion_text": "Die zuständigen Verantwortlichen planen IT-Änderungen nach gemeinsamen, dokumentierten Regeln entsprechend ihrer Art und Dringlichkeit.",
           "criterion_id": "PR18-PSF01",
           "level": 3,
@@ -9045,7 +9082,7 @@
         },
         {
           "id": "XLS-PR18-R232",
-          "text": "Sind Ziele, Termine und Abhängigkeiten geplanter IT-Änderungen mit allen zuständigen Teams abgestimmt und aktuell dokumentiert?",
+          "text": "Werden Ziele, Termine und Abhängigkeiten geplanter IT-Änderungen mit allen zuständigen Teams abgestimmt und aktuell dokumentiert?",
           "criterion_text": "Ziele, Termine und Abhängigkeiten geplanter IT-Änderungen sind mit allen Beteiligten abgestimmt und aktuell dokumentiert.",
           "criterion_id": "PR18-PSF01",
           "level": 3,
@@ -9067,7 +9104,7 @@
         },
         {
           "id": "XLS-PR18-R233",
-          "text": "Werden Erfolg und Termintreue von IT-Änderungen anhand von Zahlen ausgewertet, um Verzögerungen und Störungen zu verringern?",
+          "text": "Werden Erfolg und Termintreue während IT-Änderungen anhand von Zahlen ausgewertet, um Verzögerungen und Störungen zu verringern?",
           "criterion_text": "Erfolgsquote und Termintreue von IT-Änderungen werden ausgewertet, um Verzögerungen und negative Folgen für die betroffenen Leistungen zu verringern.",
           "criterion_id": "PR18-PSF01",
           "level": 4,
@@ -9133,7 +9170,7 @@
         },
         {
           "id": "XLS-PR18-R237",
-          "text": "Werden IT-Änderungen bei Ihnen nur mit einer Einzelfreigabe oder einem bereits genehmigten Standardverfahren umgesetzt?",
+          "text": "Werden IT-Änderungen bei Ihnen mit einem genehmigten Standardverfahren umgesetzt?",
           "criterion_text": "Für IT-Änderungen liegt eine Freigabe vor, entweder für den Einzelfall oder für einen vorab genehmigten Standardablauf.",
           "criterion_id": "PR18-PSF02",
           "level": 2,
@@ -9265,7 +9302,7 @@
         },
         {
           "id": "XLS-PR18-R244",
-          "text": "Erhalten von einer IT-Änderung betroffene Personen rechtzeitig Informationen und eine Möglichkeit, Rückmeldungen einzubringen?",
+          "text": "Werden Personen, die von einer IT-Änderung betroffen sind, rechtzeitig informiert und erhalten die Möglichkeit Rückmeldung einzubringen?",
           "criterion_text": "Betroffene Beteiligte erhalten relevante Änderungsinformationen und können ihre Rückmeldungen in das Änderungsvorgehen einbringen.",
           "criterion_id": "PR18-PSF03",
           "level": 3,
@@ -9362,13 +9399,15 @@
           "id": "PR19-PSF01",
           "title": "Frühe Erkennung von Störungen + Schnelle Lösung von Störungen",
           "order": 1,
-          "source_row": 248
+          "source_row": 248,
+          "description": "Störungen werden früh erkannt und zügig mit angemessenem Aufwand behoben, damit die betroffenen IT-Leistungen wieder nutzbar sind."
         },
         {
           "id": "PR19-PSF02",
           "title": "Kontinuierliche Verbesserung des Incident Managements",
           "order": 2,
-          "source_row": 257
+          "source_row": 257,
+          "description": "Erfahrungen und Ergebnisse aus der Störungsbearbeitung werden genutzt, um das Vorgehen und die Zusammenarbeit bei der Störungsbehebung zu verbessern."
         }
       ],
       "criteria": [
@@ -9581,7 +9620,7 @@
         },
         {
           "id": "XLS-PR19-R252",
-          "text": "Sind die für die Störungsbehebung benötigten Kenntnisse geklärt und stehen dafür genügend geeignete Mitarbeitende zur Verfügung?",
+          "text": "Sind die für die Störungsbehebung benötigten Kenntnisse geregelt und stehen dafür genügend geeignete Mitarbeitende zur Verfügung?",
           "criterion_text": "Für die Incident-Wiederherstellung sind die benötigten Kompetenzen geklärt und geeignete Mitarbeitende entsprechend dem vereinbarten Servicebedarf verfügbar.",
           "criterion_id": "PR19-PSF01",
           "level": 3,
@@ -9603,7 +9642,7 @@
         },
         {
           "id": "XLS-PR19-R253",
-          "text": "Wird die Wiederherstellung einer IT-Leistung teamübergreifend so gesteuert, dass Übergaben, notwendige Änderungen und Nutzerinformationen zusammenpassen?",
+          "text": "Stimmen die beteiligten Teams bei der Wiederherstellung einer IT-Leistung ihre Übergaben, notwendigen Änderungen und Informationen an die Nutzer aufeinander ab?",
           "criterion_text": "Die Wiederherstellung wird über beteiligte Teams und Practices hinweg so gesteuert, dass Übergaben, Change-Bedarf und Kommunikation den gesamten Servicefluss unterstützen.",
           "criterion_id": "PR19-PSF01",
           "level": 4,
@@ -9691,7 +9730,7 @@
         },
         {
           "id": "XLS-PR19-R258",
-          "text": "Ist festgelegt, welche Kenntnisse für die Bearbeitung, Steuerung und Verbesserung von Störungen erforderlich sind, und stehen dafür geeignete Mitarbeitende bereit?",
+          "text": "Ist festgelegt, welche Kenntnisse für die Bearbeitung, Steuerung und Verbesserung für die jeweiligen Störungen erforderlich sind, und stehen dafür geeignete Mitarbeitende bereit?",
           "criterion_text": "Die für Durchführung, Steuerung und Weiterentwicklung des Incident Managements benötigten Kompetenzen sind bestimmt und qualifizierte Personen stehen für diese Aufgaben zur Verfügung.",
           "criterion_id": "PR19-PSF02",
           "level": 3,
@@ -9848,13 +9887,15 @@
           "id": "PR20-PSF01",
           "title": "Relevante Assetinformationen über den Lebenszyklus bereitstellen",
           "order": 1,
-          "source_row": 265
+          "source_row": 265,
+          "description": "Über IT-Mittel wie Geräte, Software und Lizenzen stehen von der Planung bis zur Aussonderung verlässliche Informationen zur Verfügung."
         },
         {
           "id": "PR20-PSF02",
           "title": "Assetnutzung laufend überwachen und optimieren",
           "order": 2,
-          "source_row": 271
+          "source_row": 271,
+          "description": "Die vorhandenen IT-Mittel werden bedarfsgerecht und wirtschaftlich eingesetzt; ihre Nutzung wird überprüft und verbessert."
         }
       ],
       "criteria": [
@@ -10214,13 +10255,15 @@
           "id": "PR21-PSF01",
           "title": "Relevante Nutzende rechtzeitig mit geeigneten Überwachungsdaten versorgen",
           "order": 1,
-          "source_row": 277
+          "source_row": 277,
+          "description": "Die Überwachung ist auf wichtige IT-Leistungen und Zustandsänderungen ausgerichtet und liefert den Zuständigen rechtzeitig relevante, verlässliche Informationen."
         },
         {
           "id": "PR21-PSF02",
           "title": "Ereignisse schnell erkennen, interpretieren und bei Bedarf behandeln",
           "order": 2,
-          "source_row": 284
+          "source_row": 284,
+          "description": "Wichtige Zustandsänderungen werden rechtzeitig erkannt, richtig eingeordnet und lösen bei Bedarf passende Maßnahmen aus."
         }
       ],
       "criteria": [
@@ -10604,13 +10647,15 @@
           "id": "PR22-PSF01",
           "title": "Probleme und ihre Serviceauswirkungen identifizieren und verstehen",
           "order": 1,
-          "source_row": 290
+          "source_row": 290,
+          "description": "Tatsächliche und mögliche Störungsursachen werden erkannt und ihre Auswirkungen auf die IT-Leistungen verstanden."
         },
         {
           "id": "PR22-PSF02",
           "title": "Problemlösung und Minderung von Auswirkungen optimieren",
           "order": 2,
-          "source_row": 302
+          "source_row": 302,
+          "description": "Störungsursachen werden wirksam und wirtschaftlich beseitigt oder ihre Auswirkungen durch geeignete Übergangslösungen begrenzt."
         }
       ],
       "criteria": [
@@ -11114,13 +11159,15 @@
           "id": "PR23-PSF01",
           "title": "Wirksames Releasevorgehen etablieren und pflegen",
           "order": 1,
-          "source_row": 308
+          "source_row": 308,
+          "description": "Für die Einführung neuer oder geänderter IT-Leistungen bestehen passende, untereinander abgestimmte Vorgehensweisen."
         },
         {
           "id": "PR23-PSF02",
           "title": "Releases in Wertströmen und Servicebeziehungen wirksam durchführen",
           "order": 2,
-          "source_row": 314
+          "source_row": 314,
+          "description": "Neue oder geänderte IT-Leistungen und Funktionen werden mit den Beteiligten abgestimmt zum vorgesehenen Zeitpunkt für die Nutzung verfügbar gemacht."
         }
       ],
       "criteria": [
@@ -11480,13 +11527,15 @@
           "id": "PR24-PSF01",
           "title": "Struktur und Umfang des Katalogs auf Organisationsanforderungen abstimmen",
           "order": 1,
-          "source_row": 320
+          "source_row": 320,
+          "description": "Aufbau und Umfang des Leistungskatalogs bilden das IT-Angebot passend zu den Anforderungen des Unternehmens ab."
         },
         {
           "id": "PR24-PSF02",
           "title": "Kataloginformationen an aktuelle und erwartete Stakeholderbedarfe anpassen",
           "order": 2,
-          "source_row": 326
+          "source_row": 326,
+          "description": "Die Angaben zu IT-Leistungen sind aktuell, zugänglich und auf den heutigen und absehbaren Informationsbedarf der Beteiligten ausgerichtet."
         }
       ],
       "criteria": [
@@ -11846,13 +11895,15 @@
           "id": "PR25-PSF01",
           "title": "Relevante Konfigurationsinformationen bereitstellen",
           "order": 1,
-          "source_row": 332
+          "source_row": 332,
+          "description": "Verlässliche Informationen über IT-Bestandteile und ihre Zusammenhänge stehen den Beteiligten bei Bedarf zur Verfügung."
         },
         {
           "id": "PR25-PSF02",
           "title": "Kosten der Konfigurationsinformationen laufend optimieren",
           "order": 2,
-          "source_row": 338
+          "source_row": 338,
+          "description": "Die Bereitstellung dieser Informationen bleibt wirtschaftlich. Umfang und Pflegeaufwand richten sich nach ihrem Nutzen und werden entsprechend angepasst."
         }
       ],
       "criteria": [
@@ -12212,13 +12263,15 @@
           "id": "PR26-PSF01",
           "title": "Kontinuitätspläne entwickeln und verwalten + Kontinuitätsrisiken mindern",
           "order": 1,
-          "source_row": 344
+          "source_row": 344,
+          "description": "Risiken schwerwiegender Ausfälle werden durch passende Vorsorgemaßnahmen und Notfallpläne begrenzt, die den Weiterbetrieb oder die Wiederherstellung wichtiger IT-Leistungen ermöglichen."
         },
         {
           "id": "PR26-PSF02",
           "title": "Bewusstsein und Einsatzbereitschaft sicherstellen",
           "order": 2,
-          "source_row": 352
+          "source_row": 352,
+          "description": "Die Beteiligten kennen ihre Aufgaben im Notfall und sind mit den erforderlichen Mitteln darauf vorbereitet, diese praktisch auszuführen."
         }
       ],
       "criteria": [
@@ -12650,13 +12703,15 @@
           "id": "PR27-PSF01",
           "title": "Organisationsweites Service-Design-Vorgehen etablieren und pflegen",
           "order": 1,
-          "source_row": 359
+          "source_row": 359,
+          "description": "Die Gestaltung neuer oder geänderter IT-Leistungen folgt einem abgestimmten Vorgehen, das die beteiligten Bereiche einbezieht."
         },
         {
           "id": "PR27-PSF02",
           "title": "Zweck- und Nutzbarkeit der Services im Lebenszyklus sicherstellen",
           "order": 2,
-          "source_row": 365
+          "source_row": 365,
+          "description": "Die gestalteten IT-Leistungen erfüllen die fachlichen Anforderungen und lassen sich während ihres gesamten Lebenslaufs zuverlässig nutzen und betreiben."
         }
       ],
       "criteria": [
@@ -13040,13 +13095,15 @@
           "id": "PR28-PSF01",
           "title": "Wirksame, effiziente und komfortable Nutzerkommunikation ermöglichen und fortlaufend verbessern",
           "order": 1,
-          "source_row": 372
+          "source_row": 372,
+          "description": "Die Kommunikation zwischen Nutzern und IT ist leicht zugänglich, verständlich und hilfreich. Sie wird an den Bedarf angepasst und mit angemessenem Aufwand ermöglicht."
         },
         {
           "id": "PR28-PSF02",
           "title": "Nutzerkommunikation wirksam in Wertströme integrieren",
           "order": 2,
-          "source_row": 379
+          "source_row": 379,
+          "description": "Anfragen und Rückmeldungen der Nutzer werden richtig eingeordnet und gelangen mit den nötigen Informationen in die passende Bearbeitung."
         }
       ],
       "criteria": [
@@ -13430,13 +13487,15 @@
           "id": "PR29-PSF01",
           "title": "Gemeinsames Verständnis der Ziel-Servicelevels etablieren",
           "order": 1,
-          "source_row": 385
+          "source_row": 385,
+          "description": "Leistungsangebot und Qualitätsziele sind mit den Kunden abgestimmt und werden regelmäßig darauf geprüft, ob sie weiterhin zum tatsächlichen Bedarf passen."
         },
         {
           "id": "PR29-PSF02",
           "title": "Einhaltung der Servicelevels anhand relevanter Daten überwachen + Verbesserungsmöglichkeiten erfassen und berichten + Services regelmäßig mit den Bedarfen abgleichen",
           "order": 2,
-          "source_row": 391
+          "source_row": 391,
+          "description": "Die Einhaltung der Ziele und die Zufriedenheit der Beteiligten werden verlässlich bewertet. Verbesserungsmöglichkeiten werden erfasst und weitergegeben."
         }
       ],
       "criteria": [
@@ -13844,13 +13903,15 @@
           "id": "PR30-PSF01",
           "title": "Erfüllungsverfahren für Serviceanfragen optimieren",
           "order": 1,
-          "source_row": 399
+          "source_row": 399,
+          "description": "Für die vorgesehenen Arten von Nutzeranfragen bestehen passende, möglichst einfache und wirtschaftliche Bearbeitungswege."
         },
         {
           "id": "PR30-PSF02",
           "title": "Serviceanfragen vereinbarungsgemäß und zur Zufriedenheit der Nutzenden erfüllen",
           "order": 2,
-          "source_row": 405
+          "source_row": 405,
+          "description": "Nutzeranfragen werden nach den vereinbarten Abläufen zuverlässig und zur Zufriedenheit der Nutzer erfüllt."
         }
       ],
       "criteria": [
@@ -14234,13 +14295,15 @@
           "id": "PR31-PSF01",
           "title": "Angemessenes Vorgehen für Validierung und Tests vereinbaren",
           "order": 1,
-          "source_row": 412
+          "source_row": 412,
+          "description": "Das Vorgehen für Prüfungen und Tests passt zu den Anforderungen an Qualität und Geschwindigkeit neuer oder geänderter IT-Leistungen."
         },
         {
           "id": "PR31-PSF02",
           "title": "Erfüllung vereinbarter Kriterien durch neue oder geänderte Leistungen sicherstellen",
           "order": 2,
-          "source_row": 418
+          "source_row": 418,
+          "description": "Durch geeignete Prüfungen wird sichergestellt, dass neue oder geänderte IT-Leistungen und ihre Bestandteile die vereinbarten Anforderungen erfüllen."
         }
       ],
       "criteria": [
@@ -14624,13 +14687,15 @@
           "id": "PR32-PSF01",
           "title": "Wirksames Deploymentvorgehen etablieren und pflegen",
           "order": 1,
-          "source_row": 425
+          "source_row": 425,
+          "description": "Ein abgestimmtes Vorgehen ermöglicht die kontrollierte Installation, Änderung und Entfernung von Software, Hardware und anderen IT-Bestandteilen."
         },
         {
           "id": "PR32-PSF02",
           "title": "Deployments in Wertströmen wirksam durchführen",
           "order": 2,
-          "source_row": 431
+          "source_row": 431,
+          "description": "IT-Bestandteile werden erfolgreich und rechtzeitig in die vorgesehenen Umgebungen eingebracht oder daraus entfernt, abgestimmt mit den übrigen Arbeitsschritten."
         }
       ],
       "criteria": [
@@ -14990,13 +15055,15 @@
           "id": "PR33-PSF01",
           "title": "Bedarfsgerechtes Infrastruktur- und Plattformvorgehen etablieren",
           "order": 1,
-          "source_row": 437
+          "source_row": 437,
+          "description": "Ein zur Unternehmensentwicklung passendes Vorgehen steuert die Planung, Bereitstellung und Betreuung der technischen Infrastruktur und Plattformen."
         },
         {
           "id": "PR33-PSF02",
           "title": "Aktuelle und erwartete Bedarfe durch Infrastruktur- und Plattformlösungen erfüllen",
           "order": 2,
-          "source_row": 443
+          "source_row": 443,
+          "description": "Die bereitgestellte Infrastruktur und die Plattformen erfüllen die heutigen und absehbaren Anforderungen des Unternehmens an seine IT-Leistungen."
         }
       ],
       "criteria": [
@@ -15356,13 +15423,15 @@
           "id": "PR34-PSF01",
           "title": "Entwicklungs- und Managementvorgehen für Software vereinbaren und verbessern",
           "order": 1,
-          "source_row": 449
+          "source_row": 449,
+          "description": "Für Entwicklung und Pflege von Software werden geeignete Vorgehensweisen ausgewählt, abgestimmt und weiterentwickelt."
         },
         {
           "id": "PR34-PSF02",
           "title": "Anforderungen und Qualitätskriterien über den Softwarelebenszyklus erfüllen",
           "order": 2,
-          "source_row": 455
+          "source_row": 455,
+          "description": "Software wird über ihren gesamten Lebenslauf so entwickelt und gepflegt, dass sie die Anforderungen und Qualitätsziele des Unternehmens erfüllt."
         }
       ],
       "criteria": [

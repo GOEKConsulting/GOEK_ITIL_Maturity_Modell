@@ -17,7 +17,7 @@
       "Fragen Practices"
     ]
   },
-  "introduction": "In den folgenden Fragen geht es um Governance. Damit ist gemeint, wie die IT geführt wird: wer Ziele und Vorgaben festlegt und wie überprüft wird, ob Ziele erreicht und Vorgaben eingehalten werden.\n\nBeispiele wären die Entscheidung, welche IT-Projekte zuerst umgesetzt werden, oder die Überprüfung, ob die IT ihr Budget einhält.\n\nSind Ihnen diese Zuständigkeiten und Abläufe grundsätzlich bekannt?",
+  "introduction": "In den folgenden Fragen geht es um Governance. Damit ist gemeint, wie die IT geführt wird: wer Ziele und Vorgaben festlegt und wie überprüft wird, ob Ziele erreicht und Vorgaben eingehalten werden.\n\nBeispiele wären die Entscheidung, welche IT-Projekte zuerst umgesetzt werden, oder die Überprüfung, ob die IT ihr Budget einhält.\n\nIst Ihnen grundsätzlich bekannt und können Sie Auskunft darüber geben, wie die IT bei Ihnen geführt wird?",
   "criteria": [
     {
       "id": "GV",
@@ -142,7 +142,7 @@
     },
     {
       "id": "XLS-GV-R017",
-      "text": "Stehen für die IT-Vorgaben genug Ressourcen wie Personal, Zeit, Geld und Arbeitsmittel bereit?  ",
+      "text": "Stehen für Ihre IT-Vorgaben genug Ressourcen wie Personal, Zeit, Geld und Arbeitsmittel bereit?  ",
       "criterion_text": "Stehen für die IT-Vorgaben genug Ressourcen wie Personal, Zeit, Geld und Arbeitsmittel bereit?  ",
       "criterion_id": "GV",
       "level": 2,
@@ -238,7 +238,7 @@
     },
     {
       "id": "XLS-GV-R023",
-      "text": "Werden Zuständigkeiten, Vorgaben, Entscheidungswege und Kontrollen regelmäßig geprüft und bei Bedarf verbessert?",
+      "text": "Werden Zuständigkeiten, Entscheidungswege und Kontrollen regelmäßig geprüft und bei Bedarf verbessert?",
       "criterion_text": "Werden Zuständigkeiten, Vorgaben, Entscheidungswege und Kontrollen regelmäßig geprüft und bei Bedarf verbessert?",
       "criterion_id": "GV",
       "level": 5,

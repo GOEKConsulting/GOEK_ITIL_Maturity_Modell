@@ -65,6 +65,7 @@ export function normalizeCatalogs(raw, rules = {}) {
         criterionTitle: criterion?.name || criterion?.title || '',
         criteriaText: source.criterion_text || '',
         psfId: source.psf_id || null, psfTitle: source.psf_title || '',
+        psfDescription: module?.psfs?.find(psf => psf.id === (source.psf_id || source.criterion_id))?.description || '',
         level: levelOf(source), categoryRequirement: category,
         optionalDetail: false, evidenceHelper: false,
         answerMeaning: 'positive_requirement',
@@ -73,7 +74,7 @@ export function normalizeCatalogs(raw, rules = {}) {
         evidenceHelp: source.evidence_focus || source.evidence_examples_text || '',
         order: source.source_row ?? source.display_order ?? source.order ?? questions.length + 1,
       };
-      if (!groups.some(g => g.id === groupId)) groups.push({ id: groupId, title: q.groupTitle, order:q.groupOrder, criterionId: source.criterion_id, psfId:q.psfId, practiceId: q.practiceId, categoryRequirement: category });
+      if (!groups.some(g => g.id === groupId)) groups.push({ id: groupId, title: q.groupTitle, description:q.psfDescription, order:q.groupOrder, criterionId: source.criterion_id, psfId:q.psfId, practiceId: q.practiceId, categoryRequirement: category });
       if (questionsById.has(q.id)) throw new Error(`Doppelte Frage-ID: ${q.id}.`);
       questions.push(q); questionsById.set(q.id, q);
     };
