@@ -9642,7 +9642,7 @@
         },
         {
           "id": "XLS-PR19-R253",
-          "text": "Stimmen die beteiligten Teams bei der Wiederherstellung einer IT-Leistung ihre Übergaben, notwendigen Änderungen und Informationen an die Nutzer aufeinander ab?",
+          "text": "Stimmen die beteiligten Teams bei der Wiederherstellung einer IT-Leistung ihre Übergaben, Maßnahmen und Informationen an die Nutzer aufeinander ab?",
           "criterion_text": "Die Wiederherstellung wird über beteiligte Teams und Practices hinweg so gesteuert, dass Übergaben, Change-Bedarf und Kommunikation den gesamten Servicefluss unterstützen.",
           "criterion_id": "PR19-PSF01",
           "level": 4,
@@ -10468,7 +10468,7 @@
         },
         {
           "id": "XLS-PR21-R281",
-          "text": "Wird ausgewertet, wie viele wichtige Störungen ohne vorherige Warnung auftreten, um Lücken in der Überwachung zu erkennen?",
+          "text": "Wird ausgewertet, wie viele Störungen ohne vorherige Warnung auftreten, um Lücken in der Überwachung zu erkennen?",
           "criterion_text": "Der Anteil wichtiger Störungen ohne vorherige Überwachungsmeldung wird ausgewertet, um Lücken in der Überwachung gezielt zu schließen.",
           "criterion_id": "PR21-PSF01",
           "level": 4,
@@ -10892,7 +10892,7 @@
         },
         {
           "id": "XLS-PR22-R295",
-          "text": "Werden bei der Ursachenanalyse auch Schwächen in Abläufen, Arbeitsanweisungen und Übergaben zwischen Teams untersucht?",
+          "text": "Werden bei der Ursachenanalyse auch Fehlerquellen in Abläufen, Arbeitsanweisungen und Übergaben zwischen Teams untersucht?",
           "criterion_text": "Problemerkennung und -untersuchung berücksichtigen mögliche Fehler in Wertströmen, Prozessen und anderen Arbeitsabläufen, beispielsweise an Übergaben oder in Arbeitsanweisungen.",
           "criterion_id": "PR22-PSF01",
           "level": 3,
@@ -10936,7 +10936,7 @@
         },
         {
           "id": "XLS-PR22-R297",
-          "text": "Werden die Ergebnisse der Ursachensuche an die zuständigen Stellen im gesamten Ablauf weitergegeben, damit notwendige Maßnahmen umgesetzt werden?",
+          "text": "Werden die Erkenntnisse der Ursachenuntersuchung an die zuständigen Stellen im gesamten Ablauf weitergegeben, damit notwendige Maßnahmen umgesetzt werden?",
           "criterion_text": "Problemerkennung und -untersuchung sind in die relevanten Wertströme eingebunden, sodass Erkenntnisse und notwendige Folgeaktivitäten durchgängig weitergegeben werden.",
           "criterion_id": "PR22-PSF01",
           "level": 3,
@@ -11326,7 +11326,7 @@
         },
         {
           "id": "XLS-PR23-R310",
-          "text": "Können die zuständigen Personen aktuelle Beschreibungen der Einführungswege und ihrer Voraussetzungen einsehen?",
+          "text": "Können die zuständigen Personen aktuelle Beschreibungen dazu einsehen, wie die Einführung abläuft und welche Voraussetzungen dafür erfüllt sein müssen?",
           "criterion_text": "Die vorgesehenen Einführungswege sind mit ihren Voraussetzungen aktuell dokumentiert und für die Beteiligten zugänglich.",
           "criterion_id": "PR23-PSF01",
           "level": 3,
@@ -11348,7 +11348,7 @@
         },
         {
           "id": "XLS-PR23-R311",
-          "text": "Werden Aufwand und Fehler unterschiedlicher Einführungswege gemessen und verglichen, um passende Verfahren für künftige Einführungen auszuwählen?",
+          "text": "Werden Aufwand und Fehler bei verschiedenen Vorgehensweisen zur Einführung erfasst und verglichen, um für künftige Einführungen ein passendes Vorgehen auszuwählen?",
           "criterion_text": "Aufwand und Fehler verschiedener Einführungswege werden regelmäßig gemessen und für die Auswahl des Vorgehens bei weiteren Einführungen ausgewertet.",
           "criterion_id": "PR23-PSF01",
           "level": 4,
@@ -11392,7 +11392,7 @@
         },
         {
           "id": "XLS-PR23-R314",
-          "text": "Stehen neue oder geänderte IT-Leistungen in Ihrem Bereich meist zum vereinbarten Zeitpunkt mit den zugesagten Funktionen zur Nutzung bereit?",
+          "text": "Stehen neue oder geänderte IT-Leistungen in Ihrem Bereich zum vereinbarten Zeitpunkt mit den zugesagten Funktionen zur Nutzung bereit?",
           "criterion_text": "Neue oder geänderte IT-Leistungen stehen in der Regel zum vereinbarten Zeitpunkt mit den vorgesehenen Funktionen zur Nutzung bereit.",
           "criterion_id": "PR23-PSF02",
           "level": 2,
@@ -12894,7 +12894,7 @@
         },
         {
           "id": "XLS-PR27-R362",
-          "text": "Werden Dauer und Nacharbeiten bei der Gestaltung von IT-Leistungen gemessen, um Gestaltung und spätere Einführung besser aufeinander abzustimmen?",
+          "text": "Werden Zeitaufwand und Nacharbeiten bei der Gestaltung von IT-Leistungen erfasst, um die Gestaltung besser auf die spätere Einführung abzustimmen?",
           "criterion_text": "Gemessene Gestaltungsdauer und Nacharbeit werden genutzt, um die Gestaltung und die geplante Einführung der IT-Leistung besser aufeinander abzustimmen.",
           "criterion_id": "PR27-PSF01",
           "level": 4,
@@ -12960,7 +12960,7 @@
         },
         {
           "id": "XLS-PR27-R366",
-          "text": "Werden Entwürfe neuer IT-Leistungen nach einheitlichen Regeln gemeinsam mit Fachbereichen, Betrieb und Anwenderunterstützung auf ihre Nutzbarkeit geprüft?",
+          "text": "Prüfen die Fachbereiche, das für den laufenden IT-Betrieb zuständige Team und der IT-Support gemeinsam nach denselben Regeln, ob eine geplante IT-Leistung nutzbar ist?",
           "criterion_text": "Entwürfe werden nach gemeinsamen Regeln mit Fachbereichen, Betrieb und Anwenderunterstützung auf ihre praktische Nutzbarkeit geprüft.",
           "criterion_id": "PR27-PSF02",
           "level": 3,
@@ -13004,7 +13004,7 @@
         },
         {
           "id": "XLS-PR27-R368",
-          "text": "Wird bei der Gestaltung einer IT-Leistung nach einem festen Vorgehen berücksichtigt, wie sie später geändert oder beendet werden kann?",
+          "text": "Wird bei der Gestaltung einer IT-Leistung systematisch geprüft, wie sie später geändert oder eingestellt werden kann?",
           "criterion_text": "Notwendige Vorkehrungen für spätere Änderungen und die Beendigung einer Leistung werden nach einem festgelegten Vorgehen in ihre Gestaltung aufgenommen.",
           "criterion_id": "PR27-PSF02",
           "level": 3,
@@ -13374,7 +13374,7 @@
         },
         {
           "id": "XLS-PR28-R380",
-          "text": "Wenden Anwenderunterstützung und bearbeitende IT-Teams einheitliche, dokumentierte Regeln zur Einordnung und Weiterleitung von Nutzeranfragen an?",
+          "text": "Werden im IT-Support und in den bearbeitenden IT-Teams einheitliche, dokumentierte Regeln zur Einordnung und Weiterleitung von Nutzeranfragen angewendet?",
           "criterion_text": "Alle beteiligten Teams wenden gemeinsame, dokumentierte Regeln zur Einordnung und Weiterleitung von Nutzeranliegen an.",
           "criterion_id": "PR28-PSF02",
           "level": 3,
@@ -13396,7 +13396,7 @@
         },
         {
           "id": "XLS-PR28-R381",
-          "text": "Können Mitarbeitende der Anwenderunterstützung aktuelle Zuständigkeiten und die für eine Übergabe erforderlichen Angaben nachlesen?",
+          "text": "Können Mitarbeitende des IT-Supports aktuelle Zuständigkeiten und die für eine Übergabe erforderlichen Angaben nachlesen?",
           "criterion_text": "Zuständigkeiten und die für eine Übergabe erforderlichen Angaben sind aktuell dokumentiert und für die Anwenderunterstützung zugänglich.",
           "criterion_id": "PR28-PSF02",
           "level": 3,
