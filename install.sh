@@ -188,7 +188,7 @@ cat > "$BASE/verify.py" <<'GOEK_TEST'
 import concurrent.futures, json, os, pathlib, secrets, subprocess, sys, tempfile, time, urllib.request, urllib.error
 
 base=pathlib.Path(sys.argv[1]); temporary=tempfile.TemporaryDirectory(prefix='goek-itil-test-')
-data=pathlib.Path(temporary.name)/'data'; password=secrets.token_urlsafe(24)
+data=pathlib.Path(temporary.name)/'data'; password='Test-'+secrets.token_urlsafe(24)
 flags=['--dir='+str(data),'--migrationsDir='+str(base/'pb_migrations'),'--hooksDir='+str(base/'pb_hooks')]
 subprocess.run([str(base/'pocketbase'),'migrate','up',*flags],check=True,stdout=subprocess.DEVNULL)
 subprocess.run([str(base/'pocketbase'),'superuser','create','test@example.invalid',password,*flags],check=True,stdout=subprocess.DEVNULL)
