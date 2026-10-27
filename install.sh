@@ -78,7 +78,7 @@ function metaRecord(app,uid){
 }
 function load(e){
   const uid=e.auth.id;
-  const rows=e.app.findRecordsByFilter('assessment_projects','owner = {:id} || access_users ?= {:id}','external_id',10000,0,{id:uid});
+  const rows=e.app.findRecordsByFilter('assessment_projects','owner = {:id} || access_users.id ?= {:id}','external_id',10000,0,{id:uid});
   const mr=metaRecord(e.app,uid);
   const workspace=mr ? value(mr).data : {};
   workspace.projects=[];workspace.deletedProjects=[];
@@ -140,6 +140,7 @@ function share(e){
   return e.json(200,{success:true});
 }
 module.exports={load:load,save:save,sharing:sharing,share:share};
+
 
 GOEK_WORKSPACE
 
@@ -232,8 +233,10 @@ try:
     expect(call('/api/goek/workspace',token=b)[1]['workspace']['projects']==[],'unshared project hidden')
     expect(call('/api/goek/workspace',{'changes':[dict(change,expected=1)],'meta':{}},b)[0]==403,'unauthorized mutation denied')
     expect(call('/api/goek/sharing',{'id':project['id'],'users':[users[1][0]['id']]},a)[0]==200,'owner can share project')
+    shared=call('/api/goek/sharing',token=a)[1]
+    expect(shared.get('projects') and users[1][0]['id'] in shared['projects'][0]['users'],'shared access list persisted: '+str(shared))
     loaded=call('/api/goek/workspace',token=b)[1]
-    expect(loaded['workspace']['projects'][0]==project,'shared project visible on another account')
+    expect(loaded.get('workspace',{}).get('projects')==[project],'shared project visible on another account: '+str(loaded))
     expect(call('/api/goek/sharing',{'id':project['id'],'users':[users[2][0]['id']]},b)[0]==403,'member cannot broaden access')
     change['expected']=loaded['versions'][project['id']]
     change['data']=dict(project,name='Changed by member')
@@ -265,6 +268,7 @@ finally:
         log.seek(0)
         print(log.read()[-8000:])
     log.close();temporary.cleanup()
+
 
 GOEK_TEST
 
