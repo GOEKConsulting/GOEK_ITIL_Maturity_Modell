@@ -47,7 +47,7 @@ migrate((app) => {
   app.save(new Collection({type:'base',name:'user_workspaces',
     listRule:null,viewRule:null,createRule:null,updateRule:null,deleteRule:null,
     fields:[{type:'relation',name:'user',required:true,collectionId:users.id,maxSelect:1,cascadeDelete:true},
-      {type:'json',name:'data',required:true,maxSize:1000000}],
+      {type:'json',name:'data',maxSize:1000000}],
     indexes:['CREATE UNIQUE INDEX idx_workspace_user ON user_workspaces (user)']}));
   const settings=app.settings();
   settings.meta.appName='GÖK ITIL Assessment';
@@ -60,6 +60,7 @@ migrate((app) => {
   settings.backups.cronMaxKeep=30;
   app.save(settings);
 });
+
 
 GOEK_SCHEMA
 
@@ -201,7 +202,10 @@ def call(path,payload=None,token=None,method=None):
     req=urllib.request.Request('http://127.0.0.1:8099'+path,data=None if payload is None else json.dumps(payload).encode(),headers=headers,method=method)
     try:
         with urllib.request.urlopen(req,timeout=15) as response:return response.status,json.load(response)
-    except urllib.error.HTTPError as error:return error.code,json.load(error)
+    except urllib.error.HTTPError as error:
+        body=json.load(error)
+        print('HTTP',error.code,method or ('POST' if payload is not None else 'GET'),path,body)
+        return error.code,body
 def expect(condition,label):
     global checks
     assert condition,label
