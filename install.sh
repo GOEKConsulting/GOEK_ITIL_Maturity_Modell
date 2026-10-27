@@ -66,7 +66,7 @@ GOEK_SCHEMA
 cat > "$BASE/pb_hooks/workspace.js" <<'GOEK_WORKSPACE'
 // Each custom request is authenticated. Database collections have no public CRUD rules.
 const plain=x=>JSON.parse(JSON.stringify(x));
-const value=r=>plain(r.publicExport());
+function value(r){const p=plain(r.publicExport());if(p.data!==undefined)p.data=JSON.parse(r.getString('data'));return p;}
 function allowed(r,uid){return r.getString('owner')===uid || plain(r.getStringSlice('access_users')).indexOf(uid)>=0;}
 function existing(app,id){
   const found=app.findRecordsByFilter('assessment_projects','external_id = {:id}','',1,0,{id:id});
@@ -226,7 +226,7 @@ try:
     a,b,c=[row[1] for row in users]
     expect(call('/api/goek/workspace')[0]==401,'anonymous workspace denied')
     expect(call('/api/collections/team_users/records',{'email':'intruder@example.invalid','password':password,'passwordConfirm':password,'name':'No'})[0] in (400,403),'public registration denied')
-    project={'id':'integration-project','name':'Test project','payload':{'assessments':{'test':{}}}}
+    project={'id':'integration-project','name':'Prüfung – GÖK','payload':{'assessments':{'test':{}}}}
     change={'id':project['id'],'expected':0,'kind':'active','data':project}
     status,saved=call('/api/goek/workspace',{'changes':[change],'meta':{'activeId':project['id']}},a)
     expect(status==200 and saved['versions'][project['id']]==1,'project persisted: '+str(status)+' '+str(saved))
