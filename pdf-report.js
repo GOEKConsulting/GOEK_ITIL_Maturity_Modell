@@ -195,36 +195,42 @@ export function createAssessmentPdf({model,jsPDF=globalThis.jspdf?.jsPDF,logoDat
     return {titleHeight,metadataHeight,slots,height:cursor-(slots.length?first.blockGap:0)+first.bottomGap};
   }
   function improvements(){
-    const section=model.improvements,items=(section?.items||[]).slice(0,4);
+    const section=model.improvements;
+    const groups=[
+      {title:'SVS-Kategorien',items:(section?.featuredCategories||[]).slice(0,2),offset:0},
+      {title:'Einzelne Practices',items:(section?.featuredPractices||[]).slice(0,2),offset:2},
+    ].filter(group=>group.items.length);
+    const items=groups.flatMap(group=>group.items);
     if(!items.length)return;
     newPage();heading('Wichtigste Verbesserungen',15);
-    if(section.summary)paragraph(section.summary,{size:9,leading:3.9,gap:1.5});
-    const top=y,gap=6,columnWidth=(CW-gap)/2;
-    const rows=items.length===1?[[0]]:items.length===2?[[0,1]]:items.length===3?[[0,1],[2]]:[[0,1],[2,3]];
+    const top=y,gap=5.5,groupHeader=6.5,columnWidth=(CW-6)/2;
+    let index=0;
+    const rows=groups.map(group=>group.items.map(()=>index++));
     let layout,rowLayouts,rowHeights;
     for(const size of [10.5,10,9.5,9,8.5]){
       layout=items.map((item,index)=>improvementLayout(item,index,rows.find(row=>row.includes(index)).length===1?CW:columnWidth,size));
       rowLayouts=rows.map(row=>alignedImprovementRow(row.map(index=>layout[index])));
       rowHeights=rowLayouts.map(row=>row.height);
-      if(top+rowHeights.reduce((sum,height)=>sum+height,0)+gap*(rows.length-1)<=BOTTOM)break;
+      if(top+rowHeights.reduce((sum,height)=>sum+height,0)+groupHeader*rows.length+gap*(rows.length-1)<=BOTTOM)break;
     }
-    if(top+rowHeights.reduce((sum,height)=>sum+height,0)+gap*(rows.length-1)>BOTTOM)
+    if(top+rowHeights.reduce((sum,height)=>sum+height,0)+groupHeader*rows.length+gap*(rows.length-1)>BOTTOM)
       throw new Error('Die vollständigen Verbesserungsvorschläge passen bei lesbarer Schrift nicht auf eine A4-Seite.');
     if(items.length===4){
-      const extra=(BOTTOM-top-gap-rowHeights.reduce((sum,height)=>sum+height,0))/2;
+      const extra=(BOTTOM-top-groupHeader*rows.length-gap-rowHeights.reduce((sum,height)=>sum+height,0))/2;
       rowHeights=rowHeights.map(height=>height+extra);
     }
     rows.forEach((row,rowIndex)=>{
+      text(groups[rowIndex].title,M,y+3.4,11,'bold',C.deep);
+      rule(M,y+5.1,W-M,C.red,.25);y+=groupHeader;
       const start=y,height=rowHeights[rowIndex],rowLayout=rowLayouts[rowIndex];
       row.forEach((index,column)=>{
-        const card=layout[index],x=M+column*(columnWidth+gap),left=x+4.5;
+        const card=layout[index],x=M+column*(columnWidth+6),left=x+4.5;
         rect(x,start,card.width,height,C.white);
         doc.setDrawColor(...rgb('#D7D7D5'));doc.setLineWidth(.3);doc.rect(x,start,card.width,height,'S');
         rect(x,start,card.width,7.5,'#F4F4F3');
-        text(String(index+1).padStart(2,'0'),left,start+5.1,9,'bold',C.red);
-        if(card.item.isPracticeFocus){
-          const focus='Practice-Fokus'+(validStage(card.item.practiceStage)?` · Practice-Stufe ${card.item.practiceStage}`:'');
-          text(focus,x+card.width-4.5,start+5.1,8.5,'bold',C.gray,{align:'right'});
+        text(String(groups[rowIndex].offset+column+1).padStart(2,'0'),left,start+5.1,9,'bold',C.red);
+        if(groups[rowIndex].offset===2&&validStage(card.item.practiceStage)){
+          text(`Practice-Stufe ${card.item.practiceStage}`,x+card.width-4.5,start+5.1,8.5,'bold',C.gray,{align:'right'});
         }
         let baseline=start+11;
         card.title.forEach(line=>{text(line,left,baseline+card.titleSize*.27,card.titleSize,'bold',C.deep);baseline+=card.titleLeading;});

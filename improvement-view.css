@@ -8,10 +8,14 @@
 .improvement-plan .improvement-entry-body{min-width:0}
 .improvement-plan .improvement-context{font-size:11px;line-height:1.5;color:#606060;margin:0 0 5px;overflow-wrap:anywhere}
 .improvement-plan .improvement-item-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
-.improvement-plan h3{font-size:14px;font-weight:650;line-height:1.5;overflow-wrap:anywhere}
+.improvement-plan .improvement-group-title{font-size:13px;line-height:1.5;font-weight:650;color:#951E38;margin:19px 0 0}
+.improvement-plan .improvement-featured-group+.improvement-featured-group{border-top:1px solid #951E38;margin-top:4px}
+.improvement-plan .improvement-featured-group+.improvement-featured-group .improvement-group-title{margin-top:16px}
+.improvement-plan h4{font-size:14px;font-weight:650;line-height:1.5;overflow-wrap:anywhere;margin:0}
 .improvement-plan .improvement-priority{font-size:10px;color:#606060;white-space:nowrap;padding:3px 7px;border:1px solid #E6E6E5;border-radius:4px;line-height:1.5}
 .improvement-plan .improvement-priority--svs{color:#951E38;background:#F9EEF1;border-color:#EBD2DA}
 .improvement-plan .improvement-level{font-size:11px;color:#606060;margin-top:4px}
+.improvement-plan .improvement-practice-stage{font-size:12px;font-weight:650;color:#951E38;margin-top:6px}
 .improvement-plan .improvement-reason{font-size:12px;line-height:1.6;margin:8px 0 0;overflow-wrap:anywhere;white-space:pre-line}
 .improvement-plan .improvement-proposal{margin:10px 0 0;font-size:12px;line-height:1.6;display:grid;gap:7px}
 .improvement-plan .improvement-proposal>div{display:grid;grid-template-columns:115px minmax(0,1fr);gap:10px}

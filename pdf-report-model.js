@@ -3,6 +3,7 @@ import {COMPONENTS} from './model.js';
 import {selectedPracticeIds} from './catalogs.js';
 import {stageValue,completionText} from './mode-view.js';
 import {buildImprovementPlan} from './improvement-plan.js';
+import {selectImprovementGroups} from './improvement-selection.js';
 
 const statusLabels={confirmed:'Rechnerisch eingestuft',provisional:'Vorläufige Untergrenze',open:'Noch offen',below_baseline:'Unter Ausgangsstufe',partial_scope:'Teilumfang',needs_reconciliation:'Klärung erforderlich',not_classifiable:'Nicht einstufbar'};
 const roles=[
@@ -48,27 +49,6 @@ function roleGroup(definition,entries,category){
     .sort(compareEntries).map(({role,...entry})=>entry)};
 }
 
-function pdfImprovementSelection(plan,payload,result){
-  const top=plan.items.slice(0,3),topIds=new Set(top.map(item=>item.id)),selected=new Set(selectedPracticeIds(payload));
-  const responses=new Map((payload.assessments?.practices?.responses||[]).map(response=>[response.question_id,response]));
-  const practiceStage=item=>finalStage(result?.practice_results?.[item.practiceId]);
-  const knownLevel=value=>isLevel(value)?value:null;
-  const compareLevels=(left,right)=>left===null?(right===null?0:1):right===null?-1:left-right;
-  const candidates=plan.items.filter(item=>item.practiceId&&selected.has(item.practiceId)&&!topIds.has(item.id)&&item.questions?.length&&
-    item.questions.every(question=>{
-      const response=responses.get(question.id);
-      return response?.review_status==='approved'&&['no','partial'].includes(response.answer)&&response.answer===question.answer;
-    })).sort((left,right)=>compareLevels(practiceStage(left),practiceStage(right))||
-      compareLevels(knownLevel(left.currentLevel),knownLevel(right.currentLevel))||
-      compareLevels(knownLevel(left.targetLevel),knownLevel(right.targetLevel))||
-      left.practiceId.localeCompare(right.practiceId,'de-DE',{numeric:true})||
-      String(left.psfId||'').localeCompare(String(right.psfId||''),'de-DE',{numeric:true})||
-      left.id.localeCompare(right.id,'de-DE',{numeric:true}));
-  return [...top,...(candidates.length?[candidates[0]]:[])].map((item,index)=>({
-    ...structuredClone(item),isPracticeFocus:index===top.length,practiceStage:item.practiceId?practiceStage(item):null,
-  }));
-}
-
 /** No calculation, browser access, writes to input objects, or history migration. */
 export function buildPdfReportModel({project={},catalogs={},result=null}={}){
   const payload=project.payload||{},context=Object.values(payload.assessments||{})[0]?.context||{};
@@ -95,13 +75,16 @@ export function buildPdfReportModel({project={},catalogs={},result=null}={}){
       const a=priority(left),b=priority(right);return a===b?0:a-b;
     });
   const plan=buildImprovementPlan({project,catalogs,result});
-  const improvements={status:plan.status,summary:plan.summary,
-    items:pdfImprovementSelection(plan,payload,result).map(item=>{
+  const selection=selectImprovementGroups({plan,project,payload,catalogs,result});
+  const decorate=item=>{
       const practice=(catalogs.practices||[]).find(practice=>practice.id===item.practiceId);
       const psf=practice?.module?.psfs?.find(psf=>psf.id===item.psfId);
-      return {...item,componentLabel:COMPONENTS.find(component=>component.id===item.componentId)?.label||item.componentId,
+      return {...structuredClone(item),componentLabel:COMPONENTS.find(component=>component.id===item.componentId)?.label||item.componentId,
         practiceLabel:practice?.name_de||practice?.label||item.practiceId||'',psfLabel:psf?.title||''};
-    })};
+    };
+  const featuredCategories=selection.featuredCategories.map(decorate),featuredPractices=selection.featuredPractices.map(decorate);
+  const improvements={status:plan.status,summary:plan.summary,featuredCategories,featuredPractices,
+    items:[...featuredCategories,...featuredPractices]};
   return {
     projectName:text(project.name)||'Neue Bewertung',organization:text(context.organization)||'Noch nicht erfasst',
     scope:text(context.scope_description)||'Noch nicht festgelegt',

@@ -156,7 +156,7 @@ function renderResults(){
   '<p class="muted no-print" style="margin-bottom:16px">Hier sehen Sie die Ergebnisse Ihrer SVS-Bewertung und passende Vorschläge für Verbesserungsmaßnahmen.</p>'+
   '<div class="actions no-print" style="margin-bottom:20px"><button class="btn" data-action="print">'+icon('download')+'Ergebnis als PDF</button><button class="btn btn-primary" data-action="present">Präsentieren</button></div>'+
   stats({includeClarifications:false})+chart()+detailHtml()+
-  improvementPlanHtml({plan:currentImprovementPlan(),catalogs,project})+
+  improvementPlanHtml({plan:currentImprovementPlan(),catalogs,project,result})+
   '<div class="results-summary-grid">'+categoryResultsTable(result,{compact:true})+manualMeasures+'</div>';
 }
 function renderAssessment(){
@@ -352,7 +352,9 @@ app?.addEventListener('change',event=>{
   if(!['practice','level'].includes(improvementSelect.value))return;
   const host=improvementSelect.closest('[data-improvement-plan]');if(!host)return;
   project.ui.improvementSort=improvementSelect.value;persistWorkspace();
-  host.outerHTML=improvementPlanHtml({plan:currentImprovementPlan(),catalogs,project});
+  const categoriesExpanded=host.querySelector('[data-improvement-categories-more]')?.open;
+  host.outerHTML=improvementPlanHtml({plan:currentImprovementPlan(),catalogs,project,result});
+  const categoriesMore=document.querySelector('[data-improvement-categories-more]');if(categoriesMore)categoriesMore.open=Boolean(categoriesExpanded);
   const more=document.querySelector('[data-improvement-more]');if(more)more.open=true;
   document.querySelector('[data-improvement-sort]')?.focus({preventScroll:true});return;
  }

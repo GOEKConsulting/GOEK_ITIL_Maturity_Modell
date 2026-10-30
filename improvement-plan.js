@@ -2,6 +2,7 @@
 import {COMPONENTS} from './model.js';
 import {selectedPracticeIds} from './catalogs.js';
 import {ladder} from './scoring.js';
+import {improvementStage} from './improvement-selection.js';
 
 const ranks={svs:0,next_level:1,development:2};
 const isLevel=n=>Number.isInteger(n)&&n>=0&&n<=5;
@@ -157,8 +158,20 @@ export function buildImprovementPlan({project={},catalogs={},result=null}={}){
   const categoryTarget=isLevel(roleLevel)?roleLevel<5?roleLevel+1:null:1;
   const roleRow=(category?.component_level_evaluations||[]).find(row=>row.level===categoryTarget);
   const required=(roleRow?.practice_requirements||[]).filter(row=>selected.has(row.practice_id)&&row.state!=='fulfilled');
+  const rolePaths=[];
+  const assessedRoleCategory=improvementStage(category)!==null&&categoryTarget!==null;
   for(const requirement of required){
     const ds=practiceDescriptors.get(requirement.practice_id)||[],path=practicePath(ds,requirement.minimum_level);
+    if(requirement.state==='not_fulfilled'&&improvementStage(result.practice_results?.[requirement.practice_id])!==null){
+      // If later cumulative information prevents a complete mean-target search,
+      // known first deficits are still a real contribution, never a full path claim.
+      const knownSteps=path||ds.map(descriptor=>{
+        const target=nextLevel(descriptor);
+        return target===null?null:{descriptor,target,...targetData(descriptor,target)};
+      }).filter(option=>option?.deficits.length);
+      if(knownSteps.some(option=>option.deficits.length))rolePaths.push({requirement,path:knownSteps,
+        questionsComplete:Boolean(path)&&path.every(option=>!option.open.length)});
+    }
     if(!path)continue;
     for(const option of path){
       const priority=targetSvsLevel!==null&&limitingCategoryIds.includes('practices')?'svs':'next_level';
@@ -174,6 +187,8 @@ export function buildImprovementPlan({project={},catalogs={},result=null}={}){
   for(const config of configs.values()){
     const {descriptor:d,target,priority,roleGoal}=config,data=targetData(d,target);
     clarify(d,data.open);if(!data.deficits.length)continue;
+    const owner=d.practiceId?result.practice_results?.[d.practiceId]:result.component_results?.[d.componentId];
+    if(improvementStage(owner)===null)continue;
     const questions=data.deficits.map(q=>questionData(q,responses[d.componentId].get(q.id))),questionIds=questions.map(q=>q.id);
     const context=d.practiceId?practiceName(d.practiceId)+' · '+d.title:labelOf(d.componentId);
     const short=categoryActions[d.componentId]?.[target];
@@ -192,7 +207,42 @@ export function buildImprovementPlan({project={},catalogs={},result=null}={}){
     items.push({id:'improvement:'+descriptorKey(d)+':level:'+target,componentId:d.componentId,practiceId:d.practiceId,psfId:d.psfId,
       currentLevel:isLevel(d.unit?.assessed_level)?d.unit.assessed_level:null,targetLevel:target,title,reason,actionText,effectText,
       questionIds,questions,priority,otherRequirements:'',
+      improvementGroup:d.practiceId?'practice':'category',categoryStage:improvementStage(result.component_results?.[d.componentId]),
+      practiceStage:d.practiceId?improvementStage(owner):null,
       actionDraft:{title,effect:effectText,requirement:questionIds.join(', '),priority:ranks[priority]+1,owner:'',due:''}});
+  }
+  // A category suggestion is a real combined role-deficit path, never a copy of
+  // the weakest PSF or a made-up average. Its own stable ID supports adoption.
+  let practiceCategoryItem=null;
+  if(assessedRoleCategory&&rolePaths.length){
+    const questionMap=new Map();
+    for(const {path} of rolePaths)for(const {descriptor,deficits} of path)for(const q of deficits)
+      questionMap.set(q.id,questionData(q,responses.practices.get(q.id)));
+    const questions=[...questionMap.values()].sort((a,b)=>compareIds(a.id,b.id)),questionIds=questions.map(q=>q.id);
+    if(questionIds.length){
+      const priority=targetSvsLevel!==null&&limitingCategoryIds.includes('practices')?'svs':'next_level';
+      const title='Practices gezielt auf Kategorie-Stufe '+categoryTarget+' entwickeln';
+      const steps=[];
+      if(rolePaths.some(({requirement})=>requirement.scope_role==='primary'))steps.push('Die betroffenen Schlüssel-Practices mindestens auf Stufe '+categoryTarget+' bringen.');
+      if(rolePaths.some(({requirement})=>requirement.scope_role==='supporting'))steps.push('Die betroffenen unterstützenden Practices mindestens auf Stufe '+(categoryTarget-2)+' bringen.');
+      const actionText=steps.join(' ')+' Dafür die verknüpften Anforderungen der Erfolgsfaktoren umsetzen.';
+      const rolePathQuestionsComplete=rolePaths.length===required.length&&rolePaths.every(path=>path.questionsComplete);
+      const reason='Für Kategorie-Stufe '+categoryTarget+' fehlen bestätigte Anforderungen bei '+rolePaths.length+' '+
+        (rolePaths.length===1?'ausgewählten Practice.':'ausgewählten Practices.')+
+        (rolePathQuestionsComplete?' Die verknüpften Fragen beschreiben einen möglichen rechnerischen Weg über deren Erfolgsfaktoren.':
+          ' Die verknüpften bestätigten Anforderungen tragen zur Entwicklung der dafür benötigten Erfolgsfaktoren bei.');
+      const effectText=priority==='svs'?'Kann zur Entwicklung in Richtung SVS-Stufe '+targetSvsLevel+' beitragen.'
+        :'Kann die Entwicklung zur Practices-Kategorie-Stufe '+categoryTarget+' unterstützen.';
+      practiceCategoryItem={id:'improvement:practices:category:ladder:level:'+categoryTarget,
+        componentId:'practices',practiceId:null,psfId:null,isCategorySummary:true,improvementGroup:'category',
+        currentLevel:roleLevel,targetLevel:categoryTarget,categoryStage:roleLevel,practiceStage:null,
+        title,reason,actionText,effectText,questionIds,questions,priority,otherRequirements:'',rolePathQuestionsComplete,
+        roleRequirements:rolePaths.map(({requirement,path})=>({practiceId:requirement.practice_id,scopeRole:requirement.scope_role,
+          currentLevel:improvementStage(result.practice_results[requirement.practice_id]),minimumLevel:requirement.minimum_level,
+          psfTargets:path.map(option=>({psfId:option.descriptor.psfId,currentLevel:option.descriptor.unit.assessed_level,
+            targetLevel:option.target,questionIds:option.deficits.map(q=>q.id)}))})),
+        actionDraft:{title,effect:effectText,requirement:questionIds.join(', '),priority:ranks[priority]+1,owner:'',due:''}};
+    }
   }
   if(!result||svs?.context_status!=='complete')scopeClarification('scope:context','guiding_principles','Gemeinsamen Bewertungsumfang bestätigen',
     'Organisationseinheit, Umfang und betrachtete IT-Leistungen müssen für das Gesamtergebnis einheitlich festgelegt und bestätigt sein.','context');
@@ -206,6 +256,7 @@ export function buildImprovementPlan({project={},catalogs={},result=null}={}){
     'Eine vollständige passende PR02-Bewertung und bestätigte Practice-Auswahl sind erforderlich. Die PR02-Stufe begrenzt die eigene CI-Fragenstufe nicht numerisch.',
     selected.has('PR02')?'assessment':'practices','PR02');
   const ordered=fairOrder(items),clarificationRows=[...clarifications.values()];
+  if(practiceCategoryItem)ordered.push(practiceCategoryItem);
   const status=!ordered.length&&!clarificationRows.length?'complete':finalSvs?'ready':'incomplete';
   const summary=targetSvsLevel!==null?'Verbesserungen mit Bezug auf SVS-Stufe '+targetSvsLevel+'.'
     :finalSvs?'SVS-Stufe 5 ist erreicht.':'';
