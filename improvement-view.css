@@ -1,0 +1,44 @@
+.improvement-plan{margin:0 0 22px;background:#FFFFFF;color:#262426;min-width:0}
+.improvement-plan h2{font-size:20px;line-height:1.35;margin:0}
+.improvement-plan .improvement-summary{font-size:12px;color:#606060;margin:9px 0 0;line-height:1.6}
+.improvement-plan .improvement-items{list-style:none;padding:0;margin:0}
+.improvement-plan .improvement-entry{display:grid;grid-template-columns:26px minmax(0,1fr);gap:12px;padding:20px 0;border-bottom:1px solid #E6E6E5}
+.improvement-plan .improvement-items>li:last-child>.improvement-entry{border-bottom:0}
+.improvement-plan .improvement-index{font-size:13px;font-weight:650;color:#951E38;padding-top:1px}
+.improvement-plan .improvement-entry-body{min-width:0}
+.improvement-plan .improvement-context{font-size:11px;line-height:1.5;color:#606060;margin:0 0 5px;overflow-wrap:anywhere}
+.improvement-plan .improvement-item-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.improvement-plan h3{font-size:14px;font-weight:650;line-height:1.5;overflow-wrap:anywhere}
+.improvement-plan .improvement-priority{font-size:10px;color:#606060;white-space:nowrap;padding:3px 7px;border:1px solid #E6E6E5;border-radius:4px;line-height:1.5}
+.improvement-plan .improvement-priority--svs{color:#951E38;background:#F9EEF1;border-color:#EBD2DA}
+.improvement-plan .improvement-level{font-size:11px;color:#606060;margin-top:4px}
+.improvement-plan .improvement-reason{font-size:12px;line-height:1.6;margin:8px 0 0;overflow-wrap:anywhere;white-space:pre-line}
+.improvement-plan .improvement-proposal{margin:10px 0 0;font-size:12px;line-height:1.6;display:grid;gap:7px}
+.improvement-plan .improvement-proposal>div{display:grid;grid-template-columns:115px minmax(0,1fr);gap:10px}
+.improvement-plan .improvement-proposal dt{font-weight:600;color:#606060}
+.improvement-plan .improvement-proposal dd{margin:0;white-space:pre-line;overflow-wrap:anywhere}
+.improvement-plan .improvement-questions{font-size:12px;margin:12px 0 0}
+.improvement-plan summary{cursor:pointer;color:#951E38;font-size:12px;font-weight:600;line-height:1.6}
+.improvement-plan .improvement-questions>ol{padding-left:20px;margin:10px 0 0}
+.improvement-plan .improvement-questions>ol>li{padding:10px 0 13px;border-bottom:1px solid #E6E6E5}
+.improvement-plan .improvement-questions>ol>li:last-child{border-bottom:0}
+.improvement-plan .improvement-question-text,.improvement-plan .improvement-criterion p{font-size:12px;line-height:1.6;white-space:pre-line;overflow-wrap:anywhere}
+.improvement-plan .improvement-answer{font-size:11px;color:#606060;margin-top:5px}
+.improvement-plan .improvement-question-help{font-size:11px;line-height:1.65;color:#606060;white-space:pre-line;overflow-wrap:anywhere;margin:5px 0 8px}
+.improvement-plan .improvement-criterion{margin:7px 0 9px}
+.improvement-plan .improvement-criterion p{margin:7px 0 0;color:#606060}
+.improvement-plan .improvement-row-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.improvement-plan .improvement-more{border-top:1px solid #E6E6E5;padding-top:15px;margin-top:6px}
+.improvement-plan .improvement-sort-toolbar{display:flex;justify-content:flex-end;margin-top:12px;min-width:0}
+.improvement-plan .improvement-sort{display:flex;align-items:center;gap:8px;font-size:12px;color:#606060;max-width:100%}
+.improvement-plan .improvement-sort select{width:auto;min-width:270px;max-width:100%;min-height:36px;padding:7px 28px 7px 10px;font-size:12px}
+.improvement-plan .improvement-empty{font-size:13px;line-height:1.6;color:#606060;margin-top:15px;max-width:780px}
+@media(max-width:650px){
+  .improvement-plan h2{font-size:18px}
+  .improvement-plan .improvement-entry{grid-template-columns:18px minmax(0,1fr);gap:7px;padding:17px 0}
+  .improvement-plan .improvement-item-heading{flex-wrap:wrap;gap:6px}
+  .improvement-plan .improvement-proposal>div{grid-template-columns:1fr;gap:1px}
+  .improvement-plan .improvement-row-actions .btn{white-space:normal;text-align:left}
+  .improvement-plan .improvement-sort{width:100%;flex-direction:column;align-items:flex-start;gap:5px}
+  .improvement-plan .improvement-sort select{width:100%;min-width:0}
+}

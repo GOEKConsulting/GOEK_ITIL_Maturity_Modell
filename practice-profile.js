@@ -13,6 +13,19 @@ function practiceState(unit){
   return {level:null,status:'open',text:'Noch offen'};
 }
 
+function comparePractices(sortOrder){
+  return (left,right)=>{
+    if(sortOrder!=='catalog'){
+      const leftLevel=practiceState(left.result).level,rightLevel=practiceState(right.result).level;
+      if(leftLevel===null&&rightLevel!==null)return 1;
+      if(rightLevel===null&&leftLevel!==null)return -1;
+      if(leftLevel!==null&&rightLevel!==null&&leftLevel!==rightLevel)
+        return sortOrder==='ascending'?leftLevel-rightLevel:rightLevel-leftLevel;
+    }
+    return left.id.localeCompare(right.id,'de-DE',{numeric:true});
+  };
+}
+
 function columnHtml(entry,hasThreshold){
   const state=practiceState(entry.result);
   return `<div class="practice-profile-column${hasThreshold?' has-profile-threshold':''}" role="listitem" data-profile-practice="${esc(entry.id)}" data-profile-level="${state.level??'open'}" data-profile-status="${state.status}">
@@ -50,7 +63,8 @@ function groupHtml(role,title,entries,category,row){
 }
 
 /** Rendering never changes answers, scope decisions, result objects or browser storage. */
-export function practiceProfileHtml({result,catalogs,project}={}){
+export function practiceProfileHtml({result,catalogs,project,sortOrder='catalog'}={}){
+  const ordering=['catalog','ascending','descending'].includes(sortOrder)?sortOrder:'catalog';
   const category=result?.component_results?.practices;
   const decisions=project?.payload?.assessments?.practices?.extensions?.scope_decisions||[];
   const registry=catalogs?.practices||[];
@@ -58,7 +72,7 @@ export function practiceProfileHtml({result,catalogs,project}={}){
     const practice=registry.find(item=>item.id===id),decision=decisions.find(item=>item.practice_id===id);
     return {id,label:practice?.name_de||practice?.label||id,role:decision?.scope_role,
       result:result?.practice_results?.[id]};
-  });
+  }).sort(comparePractices(ordering));
   const primary=entries.filter(entry=>entry.role==='primary');
   const supporting=entries.filter(entry=>entry.role==='supporting');
   const unassigned=entries.filter(entry=>!['primary','supporting'].includes(entry.role));
@@ -69,7 +83,7 @@ export function practiceProfileHtml({result,catalogs,project}={}){
     :category?.status==='provisional'&&level(category.assessed_level)
       ?`Kategorie: mindestens ${category.assessed_level} (vorläufig)`:'Kategorie-Stufe noch offen';
   return `<section class="practice-profile" data-practice-profile aria-label="Practice-Profil">
-    <div class="practice-profile-heading"><h3>Practice-Profil</h3><span>${esc(categoryText)}</span></div>
+    <div class="practice-profile-heading"><h3>Practice-Profil</h3><span>${esc(categoryText)}</span><label class="practice-profile-sort" for="practice-profile-sort">Sortierung<select id="practice-profile-sort" data-profile-sort>${[['catalog','Practice-Reihenfolge (PR01–PR34)'],['ascending','Bewertung aufsteigend'],['descending','Bewertung absteigend']].map(([value,label])=>`<option value="${value}"${ordering===value?' selected':''}>${label}</option>`).join('')}</select></label></div>
     <div class="practice-profile-groups${compact?' practice-profile-groups--compact':''}">
     ${groupHtml('primary','Primary Practices · Schlüssel-Practices',primary,category,row)}
     ${groupHtml('supporting','Supporting Practices · Unterstützende Practices',supporting,category,row)}

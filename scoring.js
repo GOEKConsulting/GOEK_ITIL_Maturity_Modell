@@ -1,5 +1,6 @@
 /** Excel question-catalog policy, replacing the former V5 reference model. */
-export const VERSION='2026.10.22';
+import {VERSION, CATALOG_VERSIONS} from './catalog-versions.js';
+export {VERSION};
 export const POLICY_ID='GOEK-XLSX-PSF-CUMULATIVE-2026-10-22';
 export const SIMPLIFIED_MODE='simplified_self_assessment';
 export const SIMPLIFIED_POLICY_ID=POLICY_ID;
@@ -52,7 +53,7 @@ function validDate(value){
 }
 function validate(catalog,record){
  if(!object(record))fail('Bewertungsdatensatz fehlt.');
- if(record.catalog_id!==catalog.catalog_id||record.catalog_version!==catalog.catalog_version||catalog.catalog_version!==VERSION)fail('Katalog oder Version passt nicht zum neuen Fragenkatalog.');
+ if(record.catalog_id!==catalog.catalog_id||record.catalog_version!==catalog.catalog_version||catalog.catalog_version!==CATALOG_VERSIONS[componentId(catalog)])fail('Katalog oder Version passt nicht zum neuen Fragenkatalog.');
  if(!record.assessment_id||!record.assessment_unit_id)fail('Bewertungs-ID oder Organisationseinheit fehlt.');
  if(!['draft_preview','pilot','regular'].includes(record.assessment_execution_mode))fail('Ungültiger Ausführungsmodus.');
  if(!object(record.context)||!object(record.extensions))fail('Kontext oder Erweiterungen fehlen.');

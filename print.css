@@ -1,0 +1,47 @@
+/* Compact report layout; matrix row heights stay aligned with the SVS threshold. */
+@media screen and (min-width:851px){
+  .stats-grid--results{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+
+@page{size:A4 portrait;margin:12mm}
+@media print{
+  body{font-size:9pt;line-height:1.4}
+  .shell,.presentation{min-height:0}
+  .content,.presentation-content{width:auto;max-width:none;padding:0}
+  .skip-link{display:none!important}
+  .page-head{display:block;margin:0 0 5mm}
+  .page-head h1{font-size:20pt;line-height:1.15}
+  .eyebrow{font-size:7pt;margin-bottom:2mm}
+  .subtitle{font-size:9pt;line-height:1.35;margin-top:2mm}
+  .project-summary{font-size:8pt;gap:2mm 5mm;margin:0 0 4mm}
+  .notice,.consistency-warning{padding:2mm 3mm;margin:0 0 3mm;font-size:8pt}
+  .notice.demo{display:none}
+  .stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3mm;margin:0 0 4mm;break-inside:avoid}
+  .stats-grid>.stat,.presentation .stats-grid>.stat{margin:0;padding:3mm;border-radius:2mm;min-width:0}
+  .stat--clarifications{display:none!important}
+  .stat-label{font-size:8pt;line-height:1.3}
+  .stat-label-note{font-size:7pt;line-height:1.3;margin-top:1mm}
+  .stat:first-child .stat-label{padding-right:0}
+  .stat-number{font-size:20pt;line-height:1.1;letter-spacing:0;margin-top:2mm}
+  .stat-number span{font-size:9pt}
+  .stats-grid>.stat:first-child .stat-number span{color:var(--gray)}
+  .stat-detail{font-size:7.5pt;line-height:1.35;margin-top:1.5mm}
+  .stat-icon{display:none}
+  .chart-card,.presentation .chart-card,.results-view-tabs~.chart-card{padding:4mm;margin:0 0 5mm;break-inside:avoid;page-break-inside:avoid}
+  .chart-card .card-head{margin-bottom:3mm;gap:3mm}
+  .chart-card h2{font-size:13pt;line-height:1.2}
+  .chart-card .small{font-size:8pt}
+  .chart-card .badge{font-size:6.5pt}
+  .matrix-scroll{overflow:visible;padding-bottom:0}
+  .matrix{width:100%;min-width:0}
+  .matrix-caption{font-size:8pt}
+  .chart-legend{font-size:7pt;line-height:1.35;gap:2mm 4mm;margin-top:3mm}
+  .chart-legend>.muted{display:none}
+  .presentation-header{padding:0 0 3mm;gap:4mm}
+  .presentation-header .logo-window{width:120px;height:58px}
+  .presentation-header .logo-window img{width:245px;left:-59px;top:-33px}
+  .presentation-header h1{font-size:17pt;line-height:1.2}
+  .presentation-caption{font-size:8pt;margin:2mm 0 3mm}
+  .presentation .card{margin-top:0}
+  .card,.category-results-table{break-inside:avoid}
+}

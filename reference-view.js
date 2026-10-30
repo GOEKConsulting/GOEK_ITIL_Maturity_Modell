@@ -1,5 +1,6 @@
 import { formatReferenceNumber } from './reference-data.js';
 import { selectedPracticeIds } from './catalogs.js';
+import { REFERENCE_CASE_SOURCES } from './reference-case-sources.js';
 
 const COMPONENTS = [
   {id:'guiding_principles',label:'Guiding Principles'}, {id:'governance',label:'Governance'},
@@ -85,9 +86,12 @@ function table(headers,rows,{className = '',attributes = '',caption} = {}) {
 function overallHtml({data,result,project}) {
   const rows = (data.overallRecords || []).map(row => {
     const level = row.publishedLevel ?? row.floorValue;
-    return `<tr data-reference-id="${esc(row.id)}" data-reference-overall="${esc(row.id)}"><th scope="row">${esc(row.organization || row.labelGerman || row.label || row.name || row.id)}</th><td class="reference-floor" data-reference-floor data-reference-level>${numeric(level) ? esc(number(level)) : '—'}</td>${ownRawCell(result?.svs_result)}${ownLevelCell(result?.svs_result)}</tr>`;
+    const source=REFERENCE_CASE_SOURCES[row.id],url=safeReferenceUrl(source?.url);
+    const label=esc(row.organization || row.labelGerman || row.label || row.name || row.id);
+    const name=url?`<a class="reference-source-link" data-reference-case-source href="${esc(url)}" target="_blank" rel="noopener noreferrer" title="${esc(source.title)}">${label}</a><small>${esc(source.scope)}</small>`:label;
+    return `<tr data-reference-id="${esc(row.id)}" data-reference-overall="${esc(row.id)}"><th scope="row">${name}</th><td class="reference-floor" data-reference-floor data-reference-level>${numeric(level) ? esc(number(level)) : '—'}</td>${ownRawCell(result?.svs_result)}${ownLevelCell(result?.svs_result)}</tr>`;
   });
-  return `<section class="reference-section" data-reference-section="overall" aria-labelledby="reference-overall-title"><h3 id="reference-overall-title">Service Value System</h3>${table(['Referenz','SVS-Level','Ihr SVS-Gesamtwert',`Ihre finale SVS-Stufe${project?.name ? ` · ${project.name}` : ''}`],rows,{className:'reference-overall-table',caption:'Drei SVS-Gesamtreferenzen im Vergleich zur eigenen SVS-Stufe'})}</section>`;
+  return `<section class="reference-section" data-reference-section="overall" aria-labelledby="reference-overall-title"><h3 id="reference-overall-title">Service Value System</h3><p class="reference-explanation">Die verlinkten Quellen zeigen veröffentlichte Reifeeinstufungen einzelner Organisationen: externe Assessments bei Vodafone/VOIS und Salvation Army sowie eine wissenschaftliche Fallstudie zur Universitas Ivet Semarang. Sie dienen als Orientierung, da sich Umfang, Zeitpunkt und Bewertungsverfahren von Ihrer Bewertung unterscheiden können.</p>${table(['Referenz','SVS-Level','Ihr SVS-Gesamtwert',`Ihre finale SVS-Stufe${project?.name ? ` · ${project.name}` : ''}`],rows,{className:'reference-overall-table',caption:'Drei SVS-Gesamtreferenzen im Vergleich zur eigenen SVS-Stufe'})}</section>`;
 }
 
 function componentsHtml({data,result}) {
@@ -96,20 +100,20 @@ function componentsHtml({data,result}) {
     const own = result?.component_results?.[component.id];
     return `<tr data-reference-id="${esc(row?.id || component.id)}" data-reference-component="${component.id}" data-own-component="${component.id}"><th scope="row">${component.label}</th>${originalCell(row,{fractionDigits:2})}${floorCell(row)}${ownLevelCell(own)}</tr>`;
   });
-  return `<section class="reference-section" data-reference-section="components" aria-labelledby="reference-components-title"><h3 id="reference-components-title">Kategorien des Service Value Systems</h3>${table(['Kategorie','Mittelwert Referenz','Referenzstufe','Ihre Stufe'],rows,{className:'reference-component-table',caption:'Kategorien des Service Value Systems im Vergleich zur eigenen Kategorie-Stufe'})}</section>`;
+  return `<section class="reference-section" data-reference-section="components" aria-labelledby="reference-components-title"><h3 id="reference-components-title">Kategorien des Service Value Systems</h3><p class="reference-explanation">Die Referenzmittelwerte beruhen auf der bereitgestellten Auswertung wissenschaftlicher Studien und fassen mehrere Bewertungen zu einem Mittelwert zusammen.</p>${table(['Kategorie','Mittelwert Referenz','Referenzstufe','Ihre Stufe'],rows,{className:'reference-component-table',caption:'Kategorien des Service Value Systems im Vergleich zur eigenen Kategorie-Stufe'})}</section>`;
 }
 
 function practiceTable(entries,result,{selected = false,categoryReference = null} = {}) {
   const rows = entries.map(entry => `<tr data-reference-id="${esc(entry.reference?.id || entry.id)}" data-reference-practice="${esc(entry.id)}"><th scope="row">${esc(entry.label)}<small>${esc(entry.id)}</small></th>${originalCell(entry.reference)}${floorCell(entry.reference)}${selected ? `${ownRawCell(result?.practice_results?.[entry.id])}${ownLevelCell(result?.practice_results?.[entry.id])}` : ''}</tr>`);
   if (selected) rows.unshift(`<tr class="reference-practices-category" data-reference-practices-category><th scope="row">Gesamte Practices-Kategorie</th>${originalCell(categoryReference,{fractionDigits:2})}${floorCell(categoryReference)}${ownRawCell(result?.component_results?.practices)}${ownLevelCell(result?.component_results?.practices)}</tr>`);
   const group = selected ? 'selected' : 'remaining';
-  return table(['Practice','Mittelwert Referenz','Referenzstufe',...(selected ? ['Ihr exakter Wert','Ihre Stufe'] : [])],rows,{className:'reference-practice-table',attributes:` data-reference-practice-group="${group}"`,caption:selected ? 'Im Projekt einbezogene Practices im Vergleich zu Referenzwerten' : 'Weitere Practices mit Referenzwerten'});
+  return table(['Practice','Mittelwert Referenz','Referenzstufe',...(selected ? ['Ihr Durchschnitt','Ihre Stufe'] : [])],rows,{className:'reference-practice-table',attributes:` data-reference-practice-group="${group}"`,caption:selected ? 'Im Projekt einbezogene Practices im Vergleich zu Referenzwerten' : 'Weitere Practices mit Referenzwerten'});
 }
 
 function practicesHtml(options) {
   const {selected,remaining} = referencePracticeGroups(options);
   const categoryReference = (options.data.componentRecords || []).find(row => row.componentId === 'practices') || null;
-  return `<section class="reference-section" data-reference-section="selected-practices" aria-labelledby="reference-practices-title"><h3 id="reference-practices-title">Einbezogene Practices <span class="reference-count">${selected.length}</span></h3>${practiceTable(selected,options.result,{selected:true,categoryReference})}${!selected.length ? '<p class="reference-empty" data-reference-empty-selection>Im Projekt sind noch keine Practices einbezogen. Die Referenzwerte aller Practices stehen unten.</p>' : ''}${remaining.length ? `<details class="reference-remaining" data-reference-remaining-practices><summary>Weitere ${remaining.length} Practices mit Referenzwerten</summary>${practiceTable(remaining,null)}</details>` : ''}</section>`;
+  return `<section class="reference-section" data-reference-section="selected-practices" aria-labelledby="reference-practices-title"><h3 id="reference-practices-title">Einbezogene Practices <span class="reference-count">${selected.length}</span></h3><p class="reference-explanation">Die Referenzmittelwerte beruhen auf der bereitgestellten Auswertung wissenschaftlicher Studien und fassen mehrere Bewertungen zu einem Mittelwert zusammen.</p>${practiceTable(selected,options.result,{selected:true,categoryReference})}${!selected.length ? '<p class="reference-empty" data-reference-empty-selection>Im Projekt sind noch keine Practices einbezogen. Die Referenzwerte aller Practices stehen unten.</p>' : ''}${remaining.length ? `<details class="reference-remaining" data-reference-remaining-practices><summary>Weitere ${remaining.length} Practices mit Referenzwerten</summary>${practiceTable(remaining,null)}</details>` : ''}</section>`;
 }
 
 /** Pure read-only projection of reference data, actual scope decisions and evaluated results. */

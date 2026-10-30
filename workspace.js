@@ -35,7 +35,7 @@ function validateProject(project) {
     throw new Error(`Projekt ${project.id}: Bewertungsdaten unter „payload.assessments“ fehlen.`);
   }
   getAssessmentDepth(project.payload);
-  for (const key of ['tasks', 'actions', 'snapshots']) {
+  for (const key of ['tasks', 'actions', 'snapshots', 'deletedActions']) {
     if (project[key] != null && !Array.isArray(project[key])) throw new Error(`Projekt ${project.id}: ${key} muss eine Liste sein.`);
   }
   for (const key of ['ui', 'details', 'migrationArchive']) {

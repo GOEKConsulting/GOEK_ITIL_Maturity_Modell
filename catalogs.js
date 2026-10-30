@@ -1,6 +1,8 @@
 /** Display adapters for the verbatim questions in the supplied Excel workbook. */
+import {VERSION, CATALOG_VERSIONS} from './catalog-versions.js';
+export {CATALOG_VERSIONS};
 export const POLICY_ID = 'GOEK-XLSX-PSF-CUMULATIVE-2026-10-22';
-export const CATALOG_VERSION = '2026.10.22';
+export const CATALOG_VERSION = VERSION;
 export const COMPONENTS = [
   { id: 'guiding_principles', label: 'Guiding Principles', shortLabel: 'Leitprinzipien', file: 'GP_Fragenkatalog_V5.json' },
   { id: 'governance', label: 'Governance', shortLabel: 'Governance', file: 'SVS_Governance_Fragenkatalog_V5.json' },
@@ -46,7 +48,7 @@ export function normalizeCatalogs(raw, rules = {}) {
   const components = COMPONENTS.map(definition => {
     const catalog = raw[definition.id];
     if (!catalog) throw new Error(`Katalog fehlt: ${definition.label}.`);
-    if (catalog.catalog_version !== CATALOG_VERSION) throw new Error(`Nicht unterstützte Katalogversion: ${definition.label}.`);
+    if (catalog.catalog_version !== CATALOG_VERSIONS[definition.id]) throw new Error(`Nicht unterstützte Katalogversion: ${definition.label}.`);
     if (catalog.common_assessment_policy?.policy_id !== POLICY_ID) throw new Error(`Abweichende Bewertungsregel: ${definition.label}.`);
     const groups = [];
     const questions = [];
@@ -64,6 +66,7 @@ export function normalizeCatalogs(raw, rules = {}) {
         groupOrder: source.psf_order ?? criterion?.order ?? 1,
         criterionTitle: criterion?.name || criterion?.title || '',
         criteriaText: source.criterion_text || '',
+        helpText: source.help_text || '',
         psfId: source.psf_id || null, psfTitle: source.psf_title || '',
         psfDescription: module?.psfs?.find(psf => psf.id === (source.psf_id || source.criterion_id))?.description || '',
         level: levelOf(source), categoryRequirement: category,

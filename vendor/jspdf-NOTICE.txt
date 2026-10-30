@@ -1,0 +1,4 @@
+jsPDF 4.2.1
+Source: https://github.com/parallax/jsPDF/tree/v4.2.1
+Package integrity: sha512-YyAXyvnmjTbR4bHQRLzex3CuINCDlQnBqoSYyjJwTP2x9jDLuKDzy7aKUl0hgx3uhcl7xzg32agn5vlie6HIlQ==
+Distributed under the MIT license; see jspdf-LICENSE.txt.

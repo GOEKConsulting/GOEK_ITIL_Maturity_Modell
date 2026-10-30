@@ -141,11 +141,13 @@ function answerStatus(row,ui) {
 
 function cardHtml(state,ui,step) {
   const question = state.question,row = responseFor(state.record,question.id),criteria = state.practice ? question.criteriaText || question.criterion_text || '' : '';
+  const help = String(question.helpText ?? question.help_text ?? '');
   const choices = question.answerOptions?.length ? question.answerOptions : ANSWER_OPTIONS;
   const selected = questionAnswerIsSelected(row,ui) ? row.answer : '',evidence = state.record?.evidence_register || [];
   const canGoBack = state.index > 0 || state.componentId !== 'practices' && Boolean(state.introduction) || state.groups.indexOf(state.group) > 0;
   return `<article class="card question-card" data-question-id="${esc(question.id)}"><div class="question-card-meta"><span>Frage ${state.index + 1} von ${state.questions.length}</span><span class="badge">Stufe ${question.level}</span></div>
     <h2><span class="question-prompt">${esc(question.text)}</span></h2>
+    ${help.trim() ? `<p class="question-help">${esc(help)}</p>` : ''}
     ${criteria ? `<details class="question-criterion"><summary>Kriterium anzeigen</summary><p>${esc(criteria)}</p></details>` : ''}
     <label class="field simple-answer">Ihre Antwort<select id="question-answer"><option value=""${selected ? '' : ' selected'}>Bitte auswählen</option>${optionsHtml(choices,selected)}</select></label>
     <p class="simple-answer-status" role="status">${esc(answerStatus(row,ui))}</p>

@@ -43,6 +43,7 @@ export function listPendingAnswerConfirmations(payload, catalogs, ui = {}) {
       const practiceId = practiceByQuestion.get(row.question_id) || null;
       candidates.push({ componentId, componentLabel: COMPONENTS.find(component => component.id === componentId)?.label || componentId,
         questionId: row.question_id, text: question.text || question.question || row.question_id,
+        helpText: question.help_text || question.helpText || '',
         answer: row.answer, practiceId, inSelectedScope: !practiceId || included.has(practiceId) });
     }
   }
